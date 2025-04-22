@@ -1,5 +1,6 @@
 
 import whiteLogo from '../assets/BESTLOGO_IMG_0107_Supersmooth_white.svg'
+import { SloganRoulette } from './functionalbits/SloganRoulette.jsx'
 
 function QuickLinksLanding(){
     return (
@@ -7,7 +8,7 @@ function QuickLinksLanding(){
             <div className="header">
                 <img src={whiteLogo} className="logo" alt="Meganopteryx Design logo" />
                 <h1>Meganopteryx Design</h1></div>
-            <p id="randomSlogan">Don't let your dreams stay dreams.</p>
+            {SloganRoulette()}
             <h2>Quick Links</h2>
             <ul>
                 <li><a href="https://github.com/meganopteryx">Github</a></li>
