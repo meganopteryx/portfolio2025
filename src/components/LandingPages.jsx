@@ -10,14 +10,15 @@ function QuickLinksLanding(){
             <p id="randomSlogan">Don't let your dreams stay dreams.</p>
             <h2>Quick Links</h2>
             <ul>
-            <li><a href="https://www.teepublic.com/user/meganopteryx">Teepublic</a></li>
-            <li><a href="https://meganopteryx.etsy.com">Etsy Shop</a></li> 
-            <li><a href="https://x.com/meganopteryx"><s>Twi</s></a><a href="https://bsky.app/profile/meganopteryx.bsky.social"> Bluesky</a></li>
-            <li><a href="https://www.inaturalist.org/people/meganopteryx">iNaturalist</a></li>
-            <li><a href="https://www.instagram.com/meganopteryx/">Instagram</a></li>
-            <li><a href="https://www.twitch.tv/meganopteryx">Twitch (for the occasional stream)</a></li>
-            <li><a href="https://www.tumblr.com/meganopteryx">Tumblr (probably has the most art content, but somewhat old)</a></li>
-            <li><a href="https://www.deviantart.com/meganbednarz">Deviantart (EVEN OLDER art)</a></li>
+                <li><a href="https://github.com/meganopteryx">Github</a></li>
+                <li><a href="https://www.teepublic.com/user/meganopteryx">Teepublic</a></li>
+                <li><a href="https://meganopteryx.etsy.com">Etsy Shop</a></li> 
+                <li><a href="https://x.com/meganopteryx"><s>Twi</s></a><a href="https://bsky.app/profile/meganopteryx.bsky.social"> Bluesky</a></li>
+                <li><a href="https://www.inaturalist.org/people/meganopteryx">iNaturalist</a></li>
+                <li><a href="https://www.instagram.com/meganopteryx/">Instagram</a></li>
+                <li><a href="https://www.twitch.tv/meganopteryx">Twitch (for the occasional stream)</a></li>
+                <li><a href="https://www.tumblr.com/meganopteryx">Tumblr (probably has the most art content, but somewhat old)</a></li>
+                <li><a href="https://www.deviantart.com/meganbednarz">Deviantart (EVEN OLDER art)</a></li>
             </ul>
             <p>Warning: Here be dragons.... do you dare enter <a href="/archive">ye olde website???</a> (not all content migrated here yet!)</p>
             <h2>Chatter</h2>
