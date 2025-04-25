@@ -1,7 +1,7 @@
+import { MeganopteryxLogo } from './MeganopteryxLogo.tsx';
+import { SloganRoulette } from './functionalbits/SloganRoulette.tsx'
 
-import whiteLogo from '../assets/Logo-light.svg'
-import { MeganopteryxLogo } from './MeganopteryxLogo.jsx';
-import { SloganRoulette } from './functionalbits/SloganRoulette.jsx'
+//TODO: update types for this for some reason it's Any type
 
 function QuickLinksLanding(){
     return (

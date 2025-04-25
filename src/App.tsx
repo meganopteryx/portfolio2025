@@ -1,5 +1,5 @@
 import './App.css'
-import { QuickLinksLanding } from './components/LandingPages.jsx';
+import { QuickLinksLanding } from './components/LandingPages.tsx';
 
 function App() {
 
