@@ -7,11 +7,9 @@ function QuickLinksLanding(){
     return (
         <div className="main">
             <div className="logo">
-                {/* TODO: put this in a flex box or grid so the text is next to the image */}
-                <div style={{}}>{MeganopteryxLogo()}</div>
-                {/* <img src={whiteLogo} className="logo" alt="Meganopteryx Design logo" /> */}
-                <h1>Meganopteryx Design</h1></div>
-            {SloganRoulette()}
+                <div className="logoGlyph">{MeganopteryxLogo()}</div>
+                <h1 className="logoText">Meganopteryx<br className="hidden md:visible"/>Design</h1></div>
+            <div className="slogan">{SloganRoulette()}</div>
             <h2>Quick Links</h2>
             <ul>
                 <li><a href="https://github.com/meganopteryx">Github</a></li>
