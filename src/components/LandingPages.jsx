@@ -1,14 +1,15 @@
 
-import whiteLogo from '../assets/BESTLOGO_IMG_0107_Supersmooth_white.svg'
+import whiteLogo from '../assets/Logo-light.svg'
+import { MeganopteryxLogo } from './MeganopteryxLogo.jsx';
 import { SloganRoulette } from './functionalbits/SloganRoulette.jsx'
 
 function QuickLinksLanding(){
     return (
         <div className="main">
-            <div className="header">
-                <img src={whiteLogo} className="logo" alt="Meganopteryx Design logo" />
-                <h1>Meganopteryx Design</h1></div>
-            {SloganRoulette()}
+            <div className="logo">
+                <div className="logoGlyph">{MeganopteryxLogo()}</div>
+                <h1 className="logoText">Meganopteryx<br className="hidden md:visible"/>Design</h1></div>
+            <div className="slogan">{SloganRoulette()}</div>
             <h2>Quick Links</h2>
             <ul>
                 <li><a href="https://github.com/meganopteryx">Github</a></li>
