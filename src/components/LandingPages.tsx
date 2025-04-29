@@ -10,6 +10,34 @@ function QuickLinksLanding(){
                 <div className="logoGlyph">{MeganopteryxLogo()}</div>
                 <h1 className="logoText">Meganopteryx<br className="hidden md:visible"/>Design</h1></div>
             <div className="slogan">{SloganRoulette()}</div>
+            <div className="card">
+                <h2>See what I've made!</h2>
+                <ul>
+                    <li><a href="https://github.com/meganopteryx">Github</a></li>
+                    <li><a href="https://www.inaturalist.org/people/meganopteryx">iNaturalist</a></li>
+                    <li><a href="https://www.instagram.com/meganopteryx/">Instagram</a></li>
+                    <li><a href="https://www.tumblr.com/meganopteryx">Tumblr (probably has the most art content, but somewhat old)</a></li>
+                    <li><a href="https://www.deviantart.com/meganbednarz">Deviantart (EVEN OLDER art)</a></li>
+                    <li><a href="https://meganopteryx.com/archive">Ye Olde Website</a> Warning: SUPER OLD DESIGN AND NOT MOBILE FRIENDLY</li>
+                </ul>
+            </div>
+            <div className="card">
+                <h2>Buy my stuff!</h2>
+                <ul>
+                    <li><a href="https://www.teepublic.com/user/meganopteryx">Teepublic</a></li>
+                    <li><a href="https://meganopteryx.etsy.com">Etsy Shop</a></li> 
+                </ul>
+            </div>
+            <div className="card">
+                <h2>Talk to me!</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/megan-kossa-a0a4351">LinkedIn</a></li>
+                    <li><a href="https://x.com/meganopteryx"><s>Twi</s></a><a href="https://bsky.app/profile/meganopteryx.bsky.social"> Bluesky</a></li>
+                    <li><a href="https://www.twitch.tv/meganopteryx">Twitch (for the occasional stream)</a></li>
+                    <li>Discord @Meganopteryx</li>
+                </ul>
+            </div>
+{/*             
             <h2>Quick Links</h2>
             <ul>
                 <li><a href="https://github.com/meganopteryx">Github</a></li>
@@ -21,8 +49,8 @@ function QuickLinksLanding(){
                 <li><a href="https://www.twitch.tv/meganopteryx">Twitch (for the occasional stream)</a></li>
                 <li><a href="https://www.tumblr.com/meganopteryx">Tumblr (probably has the most art content, but somewhat old)</a></li>
                 <li><a href="https://www.deviantart.com/meganbednarz">Deviantart (EVEN OLDER art)</a></li>
-            </ul>
-            <p>Warning: Here be dragons.... do you dare enter <a href="/archive">ye olde website???</a> (not all content migrated here yet!)</p>
+            </ul> */}
+            {/* <p>Warning: Here be dragons.... do you dare enter <a href="/archive">ye olde website???</a> (not all content migrated here yet!)</p> */}
             <h2>Chatter</h2>
             <h3>What I'm up to nowadays</h3>
             <p>Let's see... I got into bullet journaling and started collecting Way Too Many stickers, but some of the pages turned out pretty good. I used to do resin casting but haven't had much time for it lately, as it seems I need chunks of uninterrupted time which just doesn't happen as a mom of young kids. I'm doing occasional art commissions and attempting to break into the world of illustration but it's slow going so far. Dipping my feet back into programming, as evidenced here. We got a 3D printer for Christmas and HOLY CRAP I forgot how much work 3D modeling is. I'm much better at painting, so I've been printing things I find and painting them afterwards. It's pretty fun! I might get into tabletop wargaming at some point.</p>
