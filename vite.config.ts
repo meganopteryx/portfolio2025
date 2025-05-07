@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/portfolio2025/'
+  base: 'meganopteryx.netlify.com'
 })
