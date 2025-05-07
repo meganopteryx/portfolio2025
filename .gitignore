@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local Netlify folder
+.netlify
+
+#Old site archive (deploy manually and shouldn't need to be updated much)
+public/archive_oldsite
