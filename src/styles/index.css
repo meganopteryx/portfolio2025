@@ -1,0 +1,17 @@
+/* Modern base styles */
+:root {
+  /* We'll add CSS variables here as we migrate styles */
+  --primary-color: #333;
+  --secondary-color: #666;
+  --text-color: #222;
+  --background-color: #fff;
+}
+
+/* Import legacy styles */
+@import './legacy/index.css';
+
+/* Modern component styles */
+.modern-styles {
+  /* New component styles will go here */
+  font-family: system-ui, -apple-system, sans-serif;
+} 

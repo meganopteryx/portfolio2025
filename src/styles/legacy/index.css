@@ -1,0 +1,22 @@
+/* Legacy style imports */
+@import url('/archive/css/homepage.css') (class="legacy-homepage");
+@import url('/archive/css/portfolio.css') (class="legacy-portfolio");
+@import url('/archive/css/viz.css') (class="legacy-viz");
+@import url('/archive/css/lightbox.css') (class="legacy-lightbox");
+
+/* Legacy style scoping */
+.legacy-homepage {
+  /* Styles will only apply within this scope */
+}
+
+.legacy-portfolio {
+  /* Styles will only apply within this scope */
+}
+
+.legacy-viz {
+  /* Styles will only apply within this scope */
+}
+
+.legacy-lightbox {
+  /* Styles will only apply within this scope */
+} 
