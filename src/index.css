@@ -26,15 +26,17 @@ a:hover {
   color: #668bda;
 }
 
-/*TODO: set this to a fancy font or make it italic somehow */
+/* Slogan Styles */
 .slogan {
-  font-size:1.2em;
+  font-size: 1.2em;
   color: #3975aa;
-  font-style:italic;
+  font-style: italic;
   margin: 1em;
+  text-align: center; /* Center-align the slogan */
   /*TODO: make a fancy animation on hover*/
 }
 
+/* Shimmer Effect */
 .shimmer {
   text-align: center;
   color: rgba(255, 255, 255, 0.1);
@@ -61,39 +63,12 @@ a:hover {
   background-color: #222;
 }
 
-@-moz-keyframes shimmer {
-  0% {
-      background-position: top left;
-  }
-  100% {
-      background-position: top right;
-  }
-}
-
-@-webkit-keyframes shimmer {
-  0% {
-      background-position: top left;
-  }
-  100% {
-      background-position: top right;
-  }
-}
-
-@-o-keyframes shimmer {
-  0% {
-      background-position: top left;
-  }
-  100% {
-      background-position: top right;
-  }
-}
-
 @keyframes shimmer {
   0% {
-      background-position: top left;
+    background-position: top left;
   }
   100% {
-      background-position: top right;
+    background-position: top right;
   }
 }
 
@@ -129,11 +104,14 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/*TODO: put in card component*/
+/* Card Container */
 .cardContainer {
-  display:grid;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
   gap: 1.2em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
 }
 
 .card {
@@ -141,17 +119,38 @@ button:focus-visible {
   background-color: #213547;
   border-radius: 1rem;
   border: 1px solid #3975aa;
+  transition: background-color 0.3s ease;
 }
 
 .card:hover {
   background-color: #24435f;
 }
 
-.card h2{
-  padding: 0; margin: 0;
+.card h2 {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
 }
 
-/*TODO: Fix the colors somehow */
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.card ul li a {
+  color: #83a5ee;
+  text-decoration: none;
+}
+
+.card ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Light Mode Adjustments */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -168,12 +167,23 @@ button:focus-visible {
   }
 }
 
-/*Big-ish computer screens*/
-@media (min-width: 786px) {
-  
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+  }
+
+  .slogan {
+    font-size: 1.5em; /* Larger font size for tablets */
+  }
 }
 
-/*SUPERWIDE*/
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for desktops */
+  }
 
+  .slogan {
+    font-size: 1.8em; /* Even larger font size for desktops */
+  }
 }
