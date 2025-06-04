@@ -1,11 +1,5 @@
 /*TODO: move these into the appropriate component files*/
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: left;
-}
+/* Mostly just the logo tbh*/
 
 .logo {
   padding: 0;
@@ -14,6 +8,7 @@
   justify-content: center; /* Center the logo horizontally */
   will-change: filter;
   transition: filter 300ms;
+  flex-direction: column;
 }
 
 .logo:hover {

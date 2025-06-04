@@ -16,6 +16,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: .8rem;
+  text-align: left;
+}
 
 a {
   font-weight: 500;
@@ -34,42 +40,6 @@ a:hover {
   margin: 1em;
   text-align: center; /* Center-align the slogan */
   /*TODO: make a fancy animation on hover*/
-}
-
-/* Shimmer Effect */
-.shimmer {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.1);
-  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  -webkit-background-size: 125px 100%;
-  -moz-background-size: 125px 100%;
-  background-size: 125px 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-animation-name: shimmer;
-  -moz-animation-name: shimmer;
-  animation-name: shimmer;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: #222;
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
 }
 
 body {
@@ -115,7 +85,7 @@ button:focus-visible {
 }
 
 .card {
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   background-color: #213547;
   border-radius: 1rem;
   border: 1px solid #3975aa;
@@ -139,6 +109,22 @@ button:focus-visible {
 
 .card ul li {
   margin-bottom: 0.5rem;
+  padding-left: 1.3rem;
+  position: relative;
+}
+
+.card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('./assets/bullet-arrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: inherit;
+  fill: currentColor;
 }
 
 .card ul li a {
@@ -169,6 +155,10 @@ button:focus-visible {
 
 /* Responsive Styles */
 @media (min-width: 768px) {
+  :root {
+    padding: 2rem;
+  }
+
   .cardContainer {
     grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
   }
@@ -176,6 +166,7 @@ button:focus-visible {
   .slogan {
     font-size: 1.5em; /* Larger font size for tablets */
   }
+  
 }
 
 @media (min-width: 1024px) {
