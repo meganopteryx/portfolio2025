@@ -4,7 +4,10 @@ const slogans = [
     "Twenty Three is Number One!",
     "There are many things",
     "Can you fly if you fall off?",
-    "Expand-a-band-band ... art stash!"
+    "Expand-a-band-band ... art stash!",
+    "Purchase the means of production!",
+    "Let your imagination take flight!",
+    "Always learning, always making!"
 ];
 
 function SloganRoulette() {

@@ -11,7 +11,10 @@ function QuickLinksLanding() {
                 <h1 className="logoText">Meganopteryx<br className="hidden md:visible" />Design</h1>
             </div>
             <div className="slogan">{SloganRoulette()}</div>
-            <div className="cardContainer">
+            <div className="pageWidthLimiter">
+                <p className="blurb">I've worked as a game developer, 2d animator, full-stack web developer, and artist! I specialize in art that draws on the beauty of the natural world in resin-cast insects and other little critters, including cicada wing earrings. I paint figurines and toys for all to enjoy, as well as create custom 3D printed things!</p>
+            </div>
+            <div className="pageWidthLimiter cardContainer">
                 <div className="card">
                     <h2>See what I've made!</h2>
                     <ul>

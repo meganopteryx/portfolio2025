@@ -80,8 +80,12 @@ button:focus-visible {
   grid-template-columns: 1fr; /* Single column by default */
   gap: 1.2em;
   width: 100%;
+}
+
+.pageWidthLimiter {
   max-width: 1200px;
-  margin: 0 auto; /* Center the container */
+  margin: 0 auto; /* Center the content */
+  padding: 0 1.2em; /* Add some horizontal padding */
 }
 
 .card {
