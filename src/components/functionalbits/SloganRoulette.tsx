@@ -7,7 +7,8 @@ const slogans = [
     "Expand-a-band-band ... art stash!",
     "Purchase the means of production!",
     "Let your imagination take flight!",
-    "Always learning, always making!"
+    "Always learning, always making!",
+    "Harder, better, faster, stronger",
 ];
 
 function SloganRoulette() {
