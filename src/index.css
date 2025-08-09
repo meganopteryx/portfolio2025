@@ -215,16 +215,24 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #e4ebf1;
   }
   a {
-    color: #20517c;
+    color: #133959;
   }
   a:hover {
-    color: #3975aa;
+    color: #2c6495;
   }
   button {
     background-color: #f9f9f9;
+  }
+
+  .card {
+    color:#FFFFFF;
+  }
+
+  .logo:hover {
+    filter: drop-shadow(0 0 1em #6b92c499);
   }
 }
 
