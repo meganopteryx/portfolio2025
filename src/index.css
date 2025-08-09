@@ -19,10 +19,76 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: .8rem;
   text-align: left;
 }
 
+.logo {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the logo horizontally */
+  will-change: filter;
+  transition: filter 300ms;
+  flex-direction: row;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1em #1f78ee99);
+}
+
+.logoGlyph {
+  flex: none;
+  padding-right: .5em;
+  width: 4em; 
+  height: 4em; 
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.logoText {
+  flex: auto;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    flex-direction: row;
+    width: auto;
+  }
+  .logoGlyph {
+    padding-right: 1em;
+    width: 6em; 
+    height: 6em; 
+  }
+  
+
+  .logoText {
+    font-size: 3rem; /* Larger font size for tablets and above */
+  }
+
+  .md-visible{
+    display:block
+  }
+}
+
+@media (min-width: 1024px) {
+  .logoText {
+    font-size: 4rem; /* Even larger font size for desktops */
+  }
+
+  .logoGlyph {
+    width: 8em; 
+    height: 8em; 
+  }
+}
+
+/* Link Styles */
 a {
   font-weight: 500;
   color: #83a5ee;
@@ -35,11 +101,11 @@ a:hover {
 /* Slogan Styles */
 .slogan {
   font-size: 1.2em;
-  color: #3975aa;
+  color: #5d99ce;
   font-style: italic;
   margin: 1em;
   text-align: center; /* Center-align the slogan */
-  /*TODO: make a fancy animation on hover*/
+  /*TODO: make a fancy animation on hover or select*/
 }
 
 body {
@@ -48,6 +114,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.main {
+  padding: 10px 0;
 }
 
 h1 {
@@ -79,9 +149,12 @@ button:focus-visible {
   display: grid;
   grid-template-columns: 1fr; /* Single column by default */
   gap: 1.2em;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; /* Center the container */
+}
+
+.pageWidthLimiter {
+  max-width: 1100px;
+  margin: 0 auto; /* Center the content */
+  padding: 0 1.2em; /* Add some horizontal padding */
 }
 
 .card {
@@ -89,11 +162,13 @@ button:focus-visible {
   background-color: #213547;
   border-radius: 1rem;
   border: 1px solid #3975aa;
-  transition: background-color 0.3s ease;
+  box-shadow:inset 0 0 0 0 transparent;
+  transition: background-color 0.7s ease;
 }
 
 .card:hover {
-  background-color: #24435f;
+  background-color: #182a3c;
+  box-shadow:inset 0 0 1rem 0 rgba(255, 255, 255, 0.2);
 }
 
 .card h2 {
@@ -140,33 +215,37 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #e4ebf1;
   }
   a {
-    color: #20517c;
+    color: #133959;
   }
   a:hover {
-    color: #3975aa;
+    color: #2c6495;
   }
   button {
     background-color: #f9f9f9;
+  }
+
+  .card {
+    color:#FFFFFF;
+  }
+
+  .logo:hover {
+    filter: drop-shadow(0 0 1em #6b92c499);
   }
 }
 
 /* Responsive Styles */
 @media (min-width: 768px) {
-  :root {
-    padding: 2rem;
-  }
-
   .cardContainer {
     grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
   }
 
   .slogan {
     font-size: 1.5em; /* Larger font size for tablets */
+    filter: drop-shadow(0 0 .25em #1f78ee99);
   }
-  
 }
 
 @media (min-width: 1024px) {

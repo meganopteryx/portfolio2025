@@ -9,7 +9,6 @@ function MeganopteryxLogo() {
                 media="(prefers-color-scheme: dark)"
             />
             <img
-                height="200px"
                 src={darkLogo}
                 alt="Meganopteryx Design logo"
             />
