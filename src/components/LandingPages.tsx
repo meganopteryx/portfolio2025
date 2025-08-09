@@ -20,7 +20,7 @@ function QuickLinksLanding() {
                     <ul>
                         <li><a href="https://github.com/meganopteryx">Github</a></li>
                         <li><a href="https://www.instagram.com/meganopteryx/">Instagram</a></li>
-                        <li><a href="https://www.tumblr.com/meganopteryx">Tumblr</a> (Old-ish art and worldbuilding)</li>
+                        <li><a href="https://www.tumblr.com/meganopteryx">Tumblr</a> (Art and worldbuilding)</li>
                         <li><a href="https://www.deviantart.com/meganbednarz">Deviantart</a> (EVEN OLDER art)</li>
                         <li><a href="https://meganopteryx-archive.netlify.app">Ye Olde Website</a> (SUPER OLD)</li>
                         <li><a href="https://www.inaturalist.org/people/meganopteryx">iNaturalist</a> (Photography)</li>

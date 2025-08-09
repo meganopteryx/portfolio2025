@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { QuickLinksLanding } from './components/LandingPages';
 import { useEffect } from 'react';
-import './App.css';
+// import './App.css';
 
 function ArchiveRedirect() {
   const location = useLocation();

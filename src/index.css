@@ -19,10 +19,50 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: .2rem .8rem .8rem;
   text-align: left;
 }
 
+.logo {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the logo horizontally */
+  will-change: filter;
+  transition: filter 300ms;
+  flex-direction: column;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1em #1f78ee99);
+}
+
+.logoGlyph {
+  flex: none;
+  padding-right: 1em;
+}
+
+.logoText {
+  flex: auto;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    flex-direction: row;
+  }
+
+  .logoText {
+    font-size: 3rem; /* Larger font size for tablets and above */
+  }
+}
+
+@media (min-width: 1024px) {
+  .logoText {
+    font-size: 4rem; /* Even larger font size for desktops */
+  }
+}
+
+/* Link Styles */
 a {
   font-weight: 500;
   color: #83a5ee;
@@ -35,7 +75,7 @@ a:hover {
 /* Slogan Styles */
 .slogan {
   font-size: 1.2em;
-  color: #3975aa;
+  color: #5d99ce;
   font-style: italic;
   margin: 1em;
   text-align: center; /* Center-align the slogan */
@@ -44,6 +84,7 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 10px 0;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -79,7 +120,6 @@ button:focus-visible {
   display: grid;
   grid-template-columns: 1fr; /* Single column by default */
   gap: 1.2em;
-  width: 100%;
 }
 
 .pageWidthLimiter {
