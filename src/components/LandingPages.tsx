@@ -8,7 +8,7 @@ function QuickLinksLanding() {
         <div className="main">
             <div className="logo pageWidthLimiter">
                 <div className="logoGlyph">{MeganopteryxLogo()}</div>
-                <h1 className="logoText">Meganopteryx<br className="hidden md:visible" />Design</h1>
+                <h1 className="logoText">Meganopteryx<br className="hidden md-visible" /> Design</h1>
             </div>
             <div className="slogan">{SloganRoulette()}</div>
             <div className="pageWidthLimiter">

@@ -29,7 +29,7 @@
   justify-content: center; /* Center the logo horizontally */
   will-change: filter;
   transition: filter 300ms;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .logo:hover {
@@ -38,7 +38,13 @@
 
 .logoGlyph {
   flex: none;
-  padding-right: 1em;
+  padding-right: .5em;
+  width: 4em; 
+  height: 4em; 
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .logoText {
@@ -46,19 +52,39 @@
   font-size: 2rem;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .logo {
     flex-direction: row;
+    width: auto;
   }
+  .logoGlyph {
+    padding-right: 1em;
+    width: 6em; 
+    height: 6em; 
+  }
+  
 
   .logoText {
     font-size: 3rem; /* Larger font size for tablets and above */
+  }
+
+  .md-visible{
+    display:block
   }
 }
 
 @media (min-width: 1024px) {
   .logoText {
     font-size: 4rem; /* Even larger font size for desktops */
+  }
+
+  .logoGlyph {
+    width: 8em; 
+    height: 8em; 
   }
 }
 
@@ -84,11 +110,14 @@ a:hover {
 
 body {
   margin: 0;
-  padding: 10px 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.main {
+  padding: 10px 0;
 }
 
 h1 {
