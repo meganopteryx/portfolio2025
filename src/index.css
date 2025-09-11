@@ -56,6 +56,10 @@
   display: none;
 }
 
+.italic {
+  font-style: italic;
+}
+
 @media (min-width: 768px) {
   .logo {
     flex-direction: row;

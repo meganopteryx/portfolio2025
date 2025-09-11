@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { QuickLinksLanding } from './components/LandingPages';
+import { HomePage } from './pages/Home';
 import { useEffect } from 'react';
 
 function ArchiveRedirect() {
@@ -22,6 +23,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<QuickLinksLanding />} />
+        <Route path="/home/" element={<HomePage />} />
         <Route path="/archive/*" element={<ArchiveRedirect />} />
       </Routes>
     </Router>
