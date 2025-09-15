@@ -1,0 +1,47 @@
+.caseGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .caseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .caseGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.caseCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #3975aa;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #132334;
+}
+
+.caseCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.caseHero img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.caseBody {
+  margin-top: 1rem;
+}
+
+

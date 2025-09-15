@@ -236,6 +236,9 @@ button:focus-visible {
   }
 }
 
+/* Case studies */
+@import './styles/case-studies.css';
+
 /* Responsive Styles */
 @media (min-width: 768px) {
   .cardContainer {
