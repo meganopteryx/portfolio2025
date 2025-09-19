@@ -1,22 +1,20 @@
 ---
-title: "Sample Case Study"
+title: "Case Study: Business Coin"
 date: "2025-09-01"
-slug: "sample-case"
-tags: ["ux", "react"]
+slug: "business-coin"
+tags: ["product", "3D Printing"]
 featured: true
-coverImage: "./images/business-coin/cover.webp"
-summary: "Demonstrates MDX content with callouts and responsive images."
-role: "Designer / Dev"
-tools: ["React", "Vite", "MDX"]
+coverImage: "/case-studies/business-coin/cover.webp"
+summary: "A custom-made business card coin for my design business."
+role: "Designer / Producer"
+tools: ["3D Printing", "Bambu Studio", "Inkscape", "Bambu Labs A1"]
 ---
 
 import Callout from '../../components/mdx/Callout';
 import Figure from '../../components/mdx/Figure';
 import ResponsiveImage from '../../components/mdx/ResponsiveImage';
 
-# {frontmatter.title}
-
-This is an example case study written in MDX. It supports inline media and custom components.
+Here's the start of my first case study. I'll be updating this as I go.
 
 <Callout variant="tip" title="Pro tip">
 Use MDX to blend prose with interactive components.
@@ -34,12 +32,12 @@ Reduced onboarding friction and improved comprehension metrics.
 
 Below is a responsive image with a caption:
 
-<Figure caption="Before: Dense data table that confused users" credit="Screenshot from user testing">
-  <ResponsiveImage src="./images/cover.png" alt="Dense table interface" />
+<Figure caption="Caption text" credit="Credit text">
+  <ResponsiveImage src="/case-studies/business-coin/cover.webp" alt="Dense table interface" generateSrcSet />
 </Figure>
 
-You can also use standard Markdown images if you prefer:
+Regular standard markdown image thingy
 
-![Alt text for accessibility](./images/cover.png)
+![This is the cover image](/case-studies/business-coin/cover.webp)
 
 
