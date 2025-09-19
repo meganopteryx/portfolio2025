@@ -5,14 +5,16 @@ interface FigureProps {
   caption?: string;
   credit?: string;
   align?: 'left' | 'center' | 'right';
+  style?: React.CSSProperties;
 }
 
-export default function Figure({ children, caption, credit, align = 'center' }: FigureProps) {
+export default function Figure({ children, caption, credit, align = 'center', style }: FigureProps) {
   return (
     <figure
       style={{
         margin: '1.5rem 0',
         textAlign: align,
+        ...style
       }}
     >
       {children}

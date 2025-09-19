@@ -10,10 +10,15 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    (mdx({
-      remarkPlugins: [remarkGfm, remarkFrontmatter, remarkMdxFrontmatter],
+    mdx({
+      remarkPlugins: [
+        remarkGfm,
+        remarkFrontmatter,
+        // Type assertion needed due to incompatible plugin signatures
+        [remarkMdxFrontmatter, { name: 'frontmatter' }] as unknown as import('unified').Pluggable
+      ],
       rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
-    }) as unknown as import('vite').PluginOption),
+    }),
     react(),
   ],
   base: '/',
