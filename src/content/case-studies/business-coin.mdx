@@ -14,27 +14,31 @@ import Callout from '../../components/mdx/Callout';
 import Figure from '../../components/mdx/Figure';
 import ResponsiveImage from '../../components/mdx/ResponsiveImage';
 
-Here's the start of my first case study. I'll be updating this as I go.
+## Introduction
 
-<Callout variant="tip" title="Pro tip">
-Use MDX to blend prose with interactive components.
-</Callout>
+Here's the start of my first case study. 
+
+The idea for the business card coin came to me while in an interview prep course. I imagined feeling nervous in an interview and thought "wouldn't it be nice to have something in my pocket to fidget with?" Then I got the idea to create a 3D printed business card, with a QR code for my website URL. I could idly run my hand on the textures of the coin even when just waiting for a chance to hand them out. In my mind, this seemed immediately better than a normal business card; I always ended up losing those or having them buried in a stack of papers on my desk, never to see the light of day. This would be much more eye-catching and memorable, and get my name out there in a unique way. So, I set to work in the Bambu Studio program that came with my 3D printer. 
+
+##  Methodology
+
+First, I liked having a coin shape: it was durable and easy to manipulate: there's a reason people have used coins for millenia. Plus, it would feel like something of value. Round coins are also great at distributing forces along their outer edges, making it likely to be much more durable than a square chip or something like that. I had to try it out so I quickly got an SVG of my logo and the QR code that links to my website and hashed something together in Bambu Studio with a default cylinder and recessed SVG shapes. The first challenge was to get the QR code to be readable by my phone's camera, so I set the top and bottom layers in a different color than the recessed layers.
+
+<Figure caption="Round Version 1">
+  <ResponsiveImage src="/case-studies/business-coin/PXL_20250507_184735181.webp" alt="I tried a few color combinations and discovered that light colors on the outside worked best. QR code readers don't seem to like the brightness of the QR code being inverted." />
+</Figure>
 
 <Callout variant="summary" title="Outcome">
-Reduced onboarding friction and improved comprehension metrics.
+<h3>I wanted the coin to be:</h3>
+  <ul>
+      <li>Durable</li>
+      <li>Have a readable QR code</li>
+      <li>Nice to hold</li>
+      <li>Memorable</li>
+      <li>About the same size as a regular business card (pocketable)</li>
+  </ul>
 </Callout>
 
-<Callout variant="quote" author="PM, Finance" source="User Interview #7" align="center">
-“We finally understood the cashflow once the weekly deltas were visualized.”
-</Callout>
-
-## Gallery
-
-Below is a responsive image with a caption:
-
-<Figure caption="Caption text" credit="Credit text">
-  <ResponsiveImage src="/case-studies/business-coin/cover.webp" alt="Dense table interface" generateSrcSet />
-</Figure>
 
 Regular standard markdown image thingy
 
