@@ -12,7 +12,7 @@ export default function Figure({ children, caption, credit, align = 'center', st
   return (
     <figure
       style={{
-        margin: '1.5rem 0',
+        margin: '0 0 0.5rem 0',
         textAlign: align,
         ...style
       }}
