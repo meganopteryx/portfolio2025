@@ -46,6 +46,7 @@
   max-height: 420px;
   object-fit: cover;
   border-radius: 0.75rem;
+  margin-top: 1.2em;
 }
 
 .caseBody {
