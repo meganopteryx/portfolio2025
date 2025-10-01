@@ -56,6 +56,14 @@
   display: none;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.clearfix {
+  clear: both;
+}
+
 @media (min-width: 768px) {
   .logo {
     flex-direction: row;
@@ -235,6 +243,9 @@ button:focus-visible {
     filter: drop-shadow(0 0 1em #6b92c499);
   }
 }
+
+/* Case studies */
+@import './styles/case-studies.css';
 
 /* Responsive Styles */
 @media (min-width: 768px) {

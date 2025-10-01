@@ -1,0 +1,45 @@
+---
+title: "Sample Case Study"
+date: "2025-09-01"
+slug: "sample-case"
+tags: ["ux", "react"]
+featured: true
+coverImage: "./images/business-coin/cover.webp"
+summary: "Demonstrates MDX content with callouts and responsive images."
+role: "Designer / Dev"
+tools: ["React", "Vite", "MDX"]
+---
+
+import Callout from '../../components/mdx/Callout';
+import Figure from '../../components/mdx/Figure';
+import ResponsiveImage from '../../components/mdx/ResponsiveImage';
+
+# {frontmatter.title}
+
+This is an example case study written in MDX. It supports inline media and custom components.
+
+<Callout variant="tip" title="Pro tip">
+Use MDX to blend prose with interactive components.
+</Callout>
+
+<Callout variant="summary" title="Outcome">
+Reduced onboarding friction and improved comprehension metrics.
+</Callout>
+
+<Callout variant="quote" author="PM, Finance" source="User Interview #7" align="center">
+“We finally understood the cashflow once the weekly deltas were visualized.”
+</Callout>
+
+## Gallery
+
+Below is a responsive image with a caption:
+
+<Figure caption="Before: Dense data table that confused users" credit="Screenshot from user testing">
+  <ResponsiveImage src="./images/cover.png" alt="Dense table interface" />
+</Figure>
+
+You can also use standard Markdown images if you prefer:
+
+![Alt text for accessibility](./images/cover.png)
+
+
