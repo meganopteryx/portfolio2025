@@ -9,7 +9,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background: linear-gradient(to bottom, #1a2332, #0f1419);
+  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -122,6 +123,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .main {
@@ -163,6 +165,8 @@ button:focus-visible {
   max-width: 1100px;
   margin: 0 auto; /* Center the content */
   padding: 0 1.2em; /* Add some horizontal padding */
+  box-sizing: border-box; /* Include padding in width calculation */
+  width: 100%; /* Ensure it doesn't exceed viewport */
 }
 
 .card {
