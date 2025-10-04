@@ -16,11 +16,11 @@ import ResponsiveImage from '../../components/mdx/ResponsiveImage';
 
 ## Introduction
 
-The idea for the business card coin came to me while in an interview prep course. I imagined feeling nervous in an interview and thought "wouldn't it be nice to have something in my pocket to fidget with?" Then I got the idea to create a 3D printed business card, with a QR code for my website URL. I could idly run my hand on the textures of the coin even when just waiting for a chance to hand them out. In my mind, this seemed immediately better than a normal business card; I always ended up losing those or having them buried in a stack of papers on my desk, never to see the light of day. This would be much more eye-catching and memorable, and get my name out there in a unique way. So, I set to work in the Bambu Studio program that came with my 3D printer. 
+The idea for the business card coin came to me while in an interview prep course. I imagined feeling nervous in an interview and thought "wouldn't it be nice to have something in my pocket to fidget with?" Then I got the idea to create a 3D printed business card, with a QR code for my website URL. I could idly run my hand on the textures of the coin even when just waiting for a chance to hand them out. In my mind, this seemed immediately better than a normal business card; I always ended up losing those or having them buried in a stack of papers on my desk, never to see the light of day. This would be much more eye-catching and memorable, and help establish my professional presence in a unique way. So, I set to work in the Bambu Studio program that came with my 3D printer.
 
 ##  Methodology
 
-First, I liked having a coin shape: it was durable and easy to hold: there's a reason people have used coins for millenia. Plus, it would feel like something of value. Round coins are also great at distributing forces along their outer edges, making it likely to be much more durable than a square chip or something like that. I had to try it out so I quickly got an SVG of my logo and the QR code that links to my website and hashed something together in Bambu Studio with a default cylinder and recessed SVG shapes. The first challenge was to get the QR code to be readable by my phone's camera, so I set the top and bottom layers in a different color than the recessed layers.
+First, I liked having a coin shape: it was durable and easy to hold: there's a reason people have used coins for millennia. Plus, it would feel like something of value. Round coins are also great at distributing forces along their outer edges, making it likely to be much more durable than a square chip or something like that. I had to try it out so I quickly got an SVG of my logo and the QR code that links to my website and assembled a prototype in Bambu Studio with a default cylinder and recessed SVG shapes. The first challenge was to get the QR code to be readable by my phone's camera, so I set the top and bottom layers in a different color than the recessed layers.
 
 <Callout variant="summary" title="I wanted the coin to be:">
   <ul>
@@ -38,7 +38,7 @@ First, I liked having a coin shape: it was durable and easy to hold: there's a r
   <ResponsiveImage src="/case-studies/business-coin/PXL_20250507_184735181.webp" alt="" style={{width: '100%', height: 'auto'}}/>
 </Figure>
 
-Here's how the first version came out! I created a cylinder shape and inset the SVGs for the logo one one side and QR code on the other. I have an AMS so I can print multiple colors in the same print. I just set the dividing line for the colors to be the height of the SVG insets and got this beautiful coin! 
+The initial prototype revealed promising results. I created a cylinder shape and inset the SVGs for the logo on one side and QR code on the other. I have an AMS so I can print multiple colors in the same print, so I set the dividing line for the colors to be the height of the inset. It worked out well and my phone could read the QR code fine. 
 
 I had been planning to add some texture or knurling to the outer edge but I would have to ask around and see if people already liked the smooth outer edge. I wasn't sure if the outer edge would be best with a gear shape or just some ribbing. So, it was time to test that out. I initially wanted to make a gear, and I found a customizable gear program for OpenSCAD. Well, it turned out that if I wanted a functional gear it would just have basically knurling anyway, so I went with it. (It's not supposed to be a functional gear. I think if I decided on a gear shape after all I'd make the base shape in a simpler vector program like Inkscape or Illustrator. Chalk that up to lessons learned.)
 
@@ -50,33 +50,48 @@ I had been planning to add some texture or knurling to the outer edge but I woul
   <ResponsiveImage src="/case-studies/business-coin/PXL_20250910_190038694.webp" alt="" style={{width: '100%', height: 'auto'}}/>
 </Figure>
 
-Here's the result. They print well and they're nice to hold! I liked the extra texture the knurling gave them, and it made them a bit less slippery (I had dropped the first coin several times). I feel like the texture of the knurling complemented the texture of the 3D print in general, making it seem like a cohesive intentional design. I made sure to test the QR code with my phone and was surprised that even at this resolution it still worked well.
+The second iteration addressed these concerns. The coins print well and they're nice to hold. I appreciated the extra texture the knurling provided, and it made them a bit less slippery (I had dropped the first coin several times). The texture of the knurling complemented the texture of the 3D print in general, making it seem like a cohesive intentional design.
 
-Time to get feedback! I asked my family what they thought. The kids loved the coin immediately but they were only 1 and 5 years old so unfortunately their opinions didn't count for much. My husband said it looked good! He was surprised by the working QR code, but he did point out, "how are people without phones going to know this is for Meganopteryx Design?" Oh. He was right. I didn't have the text anywhere on the coin. Time to fix that!
+Time to get feedback. I asked my family what they thought. Initial reactions were encouraging, though my husband offered valuable insight: "How are people without phones going to know this is for Meganopteryx Design?" His observation was astute. I didn't have the text anywhere on the coin. This required revision.
 
-<Figure style={{float: 'left', 'margin-right': '.5rem', width: '100%', 'max-width': '300px'}} caption="Text wrapped around the outside rim of the coin. Yeah, I can't really read it either.">
+<Figure style={{float: 'left', 'margin-right': '.5rem', width: '100%', 'max-width': '300px'}} caption="Text wrapped around the outside rim of the coin. The text proved illegible at this scale.">
   <ResponsiveImage src="/case-studies/business-coin/PXL_20250910_190151581.webp" alt="" style={{width: '100%', height: 'auto'}}/>
 </Figure>
 
-I had an idea that I could add the text as the texture to the outside rim, but it turned out to be basically unreadable, especially with the different color banding. So, time to get out my trusty SVG editing tool and try out some fonts and layouts! 
+I had an idea that I could add the text as the texture to the outside rim, but it turned out to be basically unreadable, especially with the different color banding. So, I moved to my trusty SVG editing tool to try out some fonts and layouts.
 
 <Figure style={{float: 'right', 'margin-left': '.5rem', width: '100%', 'max-width': '300px'}} caption="A couple of different fonts on the logo text of the coin">
   <ResponsiveImage src="/case-studies/business-coin/PXL_20250910_190231831.webp" alt="" style={{width: '100%', height: 'auto'}}/>
 </Figure>
 
-I ended up going with a circular seal-like design with the words Meganopteryx Design and meganopteryx.com as the text. I tried a few fonts, as shown below... Neither of the first two really read correctly. I ended up going with Noto Sans since it printed the best at this size. 
+I ended up going with a circular seal-like design with the words Meganopteryx Design and meganopteryx.com as the text. I tried a few fonts, as shown below... Neither of the first two really read correctly. I ended up going with Noto Sans since it printed the best at this size.
 
 <br className="clearfix" />
 
 ## The Final Result
 
-<Figure style={{float: 'left', 'margin-right': '.5rem', width: '100%', 'max-width': '400px'}} caption="The finished coins! ">
+<Figure style={{float: 'left', 'margin-right': '.5rem', width: '100%', 'max-width': '400px'}} caption="The finished coins, ready to be handed out">
   <ResponsiveImage src="/case-studies/business-coin/PXL_20250910_190457933.webp" alt="" style={{width: '100%', height: 'auto'}}/>
 </Figure>
 
-So this is the final result! I printed a few batches of them and I think they're a success! They're durable, they're pocketable, they're memorable, and they're a great way to get my name out there. They're even fun to play with. Next time you see me in person, if you want one, don't hesitate to ask! (And if you want a custom coin of your very own, send me an email and I'll see what I can do!)
+The final design successfully balanced all requirements. I printed a few batches and they met every goal: durable, pocketable, memorable, engaging to handle, and an effective way to establish my professional presence. These coins successfully merge functionality with memorable design. Next time you see me in person, if you want one, feel free to ask. I also welcome inquiries about custom coins and tokens of all kinds; just send me a message and I'll see what I can do!
 
-<Figure style={{float: 'right', 'margin-left': '.5rem', width: '100%', 'max-width': '200px'}} caption="Oh, and did I mention they glow in the dark? Shiny!">
+<Figure style={{float: 'right', 'margin-left': '.5rem', width: '100%', 'max-width': '250px'}} caption="Oh, and did I mention they glow in the dark?">
   <ResponsiveImage src="/case-studies/business-coin/PXL_20250910_190753284.webp" alt="" style={{width: '100%', height: 'auto'}}/>
 </Figure>
 
+<br className='clearfix'/>
+
+## Bloopers
+
+
+
+<Figure style={{width: '100%', 'max-width': '200px'}} caption="Bad color contrast. I am surprised the QR code still works.">
+  <ResponsiveImage src="/case-studies/business-coin/PXL_20250910_190932004.webp" alt="" style={{width: '100%', height: 'auto'}}/>
+</Figure>
+
+<Figure style={{width: '100%', 'max-width': '200px'}} caption="It actually printed WORSE at higher resolution. Go figure.">
+  <ResponsiveImage src="/case-studies/business-coin/PXL_20250910_190753284.webp" alt="" style={{width: '100%', height: 'auto'}}/>
+</Figure>
+
+<br className="clearfix" />
