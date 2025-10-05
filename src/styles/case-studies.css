@@ -71,4 +71,27 @@
   max-width: 100%; /* Ensure image doesn't exceed container */
 }
 
+figure img {
+  border-radius: 0.25rem;
+  width: 100%;
+  height: auto;
+}
 
+figure {
+  width:100%;
+  max-width: 200px;
+}
+
+figure.large{
+  max-width: 400px;
+}
+
+figure.left{
+  float: left;
+  margin: 0 .8rem .8rem 0; 
+}
+
+figure.right{
+  float: right;
+  margin: 0 0 .8rem .8rem; 
+}
