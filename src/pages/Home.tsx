@@ -5,14 +5,26 @@ function HomePage() {
     return (
         <div className="main">
             {Header()}
-            <div className="pageWidthLimiter">
+            {/* <div className="pageWidthLimiter"> TODO: put this in a modal
               <h2>Product Designer & Full-Stack Developer seeking new opportunities.</h2>
                 <p className="blurb">I'm a full-stack developer with deep front-end expertise actively pursuing product designer roles. My unique background spans user experience, visual design, and technical implementation, giving me a rare understanding of what's possible and practical in digital products.</p>
                 <p>My design philosophy centers on making complex ideas accessible and beautiful. Whether I'm crafting user interfaces or handcrafting art pieces that transform fear of insects into fascination, I focus on bridging gaps: between users and technology, between form and function.</p>
                 <p>My artistic practice in resin casting and jewelry design has sharpened my eye for detail, color theory, and user psychology. This hands-on creative work translates directly into stronger visual design skills and deeper empathy for crafting experiences that truly resonate with people.</p>
                 <p className='italic'>Currently seeking full-time product design opportunities. Available for contract development work and custom art commissions.</p>
+            </div> */}
+            <div className="pageWidthLimiter cardContainer">
+                <div className="fancy card portfolioCard">
+                    <h2>Portfolio</h2>
+                </div>
+                <div className="fancy card aboutMeCard">
+                    <h2>About Me</h2>
+                </div>
+                <div className="fancy card contactCard">
+                    <h2>Contact Me</h2>
+                </div>
             </div>
             <div className="pageWidthLimiter cardContainer">
+
                 <div className="card">
                     <h2>See what I've made!</h2>
                     <ul>
