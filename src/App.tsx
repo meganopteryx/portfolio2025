@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { QuickLinksLanding } from './components/LandingPages';
+// import { QuickLinksLanding } from './components/LandingPages';
 import Layout from './components/Layout';
 import CaseStudies from './pages/case-studies/CaseStudies';
 import CaseStudyDetail from './pages/case-studies/CaseStudyDetail';

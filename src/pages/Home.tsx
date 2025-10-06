@@ -1,10 +1,17 @@
 //import { MeganopteryxLogo } from '../components/MeganopteryxLogo'
 import { Header } from '../components/Header'
+import Layout from '../components/Layout'
+import useModal from '../hooks/useModal'
+import ModalExample from '../components/examples/ModalExample'
+import AboutModal from '../components/examples/AboutModal'
 
 function HomePage() {
+    const { openModal } = useModal();
+
     return (
+        <Layout showNav={false}>
         <div className="main">
-            {Header()}
+            <Header />
             {/* <div className="pageWidthLimiter"> TODO: put this in a modal
               <h2>Product Designer & Full-Stack Developer seeking new opportunities.</h2>
                 <p className="blurb">I'm a full-stack developer with deep front-end expertise actively pursuing product designer roles. My unique background spans user experience, visual design, and technical implementation, giving me a rare understanding of what's possible and practical in digital products.</p>
@@ -13,18 +20,18 @@ function HomePage() {
                 <p className='italic'>Currently seeking full-time product design opportunities. Available for contract development work and custom art commissions.</p>
             </div> */}
             <div className="pageWidthLimiter cardContainer">
-                <div className="fancy card portfolioCard">
-                    <h2>Portfolio</h2>
-                </div>
-                <div className="fancy card aboutMeCard">
-                    <h2>About Me</h2>
-                </div>
-                <div className="fancy card contactCard">
-                    <h2>Contact Me</h2>
-                </div>
-            </div>
-            <div className="pageWidthLimiter cardContainer">
-
+                                <button
+                                                    className="fancy card portfolioCard"
+                                                    onClick={() => openModal(<ModalExample />)}
+                                                >
+                                                    <h2>Portfolio</h2>
+                                                </button>
+                                <button className="fancy card aboutMeCard" onClick={() => openModal(<AboutModal />)}>
+                                    <h2>About Me</h2>
+                                </button>
+                                <button className="fancy card contactCard" onClick={() => openModal(<ModalExample />)}>
+                                    <h2>Contact Me</h2>
+                                </button>
                 <div className="card">
                     <h2>See what I've made!</h2>
                     <ul>
@@ -59,6 +66,7 @@ function HomePage() {
                 </div>
             </div>
         </div>
+        </Layout>
     );
 }
 
