@@ -285,7 +285,7 @@
 
 .modal-btn {
   width: 100%;
-  padding: 12px 16px;
+  padding: 12px 0;
   border-radius: 6px;
   border: none;
   cursor: pointer;

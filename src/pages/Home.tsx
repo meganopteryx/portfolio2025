@@ -33,6 +33,7 @@ function HomePage() {
                         {/* TODO: Make the commission form if needed*/}
                     </ul>
                 </div>
+                <a href="/public/Megan Kossa - Developer and Designer May 2025.pdf" className="card"><h2>Download Resume</h2></a>
             </div>
         </div>
         </Layout>

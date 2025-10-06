@@ -5,6 +5,7 @@ const ContactModal: React.FC = () => {
     <div className="modal-body" style={{ maxWidth: 420, paddingBottom: '1rem' }}>
         <h2 className="modal-title">Talk to me!</h2>
         <p>I'd love to hear from you! I'm most active on Discord these days but I try to check my email fairly often.</p>
+            {/* TODO: Put the appropriate social icons here */}
             <ul>
                 <li><a href="https://www.instagram.com/meganopteryx/">Instagram</a></li>
                 <li><a href="https://github.com/meganopteryx">Github</a></li>

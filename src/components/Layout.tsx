@@ -25,10 +25,7 @@ const Layout = ({ children, showNav = true }: LayoutProps) => {
               left: '20px',
               zIndex: 1000,
               padding: '8px 16px',
-              backgroundColor: '#333',
               color: 'white',
-              border: 'none',
-              borderRadius: '4px',
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
@@ -37,27 +34,6 @@ const Layout = ({ children, showNav = true }: LayoutProps) => {
           >
             <img src={bulletArrow} alt="" style={{ transform: 'rotate(180deg)', width: '16px', height: '16px' }} />
             Home
-          </button>
-          <button
-            onClick={() => navigate(-1)}
-            style={{
-              position: 'fixed',
-              top: '68px',
-              left: '20px',
-              zIndex: 1000,
-              padding: '8px 16px',
-              backgroundColor: '#333',
-              color: 'white',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px'
-            }}
-          >
-            <img src={bulletArrow} alt="" style={{ transform: 'rotate(180deg)', width: '16px', height: '16px' }} />
-            Back
           </button>
         </>
       )}
