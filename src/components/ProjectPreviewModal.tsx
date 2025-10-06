@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Project } from '../data/portfolio';
+import type { Project } from '../content/portfolio/index';
 import useModal from '../hooks/useModal';
 
 const ProjectPreviewModal: React.FC<{ project: Project }> = ({ project }) => {
@@ -104,7 +104,7 @@ const ProjectPreviewModal: React.FC<{ project: Project }> = ({ project }) => {
             <div className="gallery-grid">
                 {project.gallery.map((image, index) => (
                     <div key={index} className="gallery-item">
-                        <img src={image.image} alt={image.caption ?? `Gallery image ${index + 1}`} />
+                        <img src={image.source} alt={image.caption ?? `Gallery image ${index + 1}`} />
                         {image.caption && <p className="gallery-caption">{image.caption}</p>}
                     </div>
                 ))}
