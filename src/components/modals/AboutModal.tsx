@@ -9,7 +9,8 @@ const AboutModal: React.FC = () => {
         <p>My artistic practice in resin casting and jewelry design has sharpened my eye for detail, color theory, and user psychology. This hands-on creative work translates directly into stronger visual design skills and deeper empathy for crafting experiences that truly resonate with people.</p>
         <p className='italic'>Currently seeking full-time product design opportunities. Available for contract development work and custom art commissions.</p>
     
-        {/* TODO: add download resume link */}
+        <a href="https://www.linkedin.com/in/megan-kossa-a0a4351">View my LinkedIn profile</a><br/>
+        <a href="/public/Megan Kossa - Developer and Designer May 2025.pdf">Download Resume</a>
     </div>
   );
 }

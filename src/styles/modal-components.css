@@ -37,7 +37,6 @@
   /* narrower centered modal so it doesn't hug the viewport edges */
   max-width: 900px;
   max-height: 90vh;
-  width: min(90%, 900px);
   background: rgba(15, 23, 42, 0.95);
   border: 1px solid rgba(147, 51, 234, 0.3);
   backdrop-filter: blur(40px);
@@ -76,7 +75,7 @@
   border-radius: 50%;
   background: transparent;
   border: none;
-  color: var(--purple-400);
+  color: white;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;

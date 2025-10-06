@@ -72,7 +72,6 @@
     height: 6em; 
   }
   
-
   .logoText {
     font-size: 3rem; /* Larger font size for tablets and above */
   }
@@ -185,18 +184,18 @@ button:focus-visible {
   font-size: 1.5rem;
 }
 
-.card ul {
+ul {
   list-style: none;
   padding: 0;
 }
 
-.card ul li {
+ul li {
   margin-bottom: 0.5rem;
   padding-left: 1.3rem;
   position: relative;
 }
 
-.card ul li::before {
+ul li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -210,12 +209,12 @@ button:focus-visible {
   fill: currentColor;
 }
 
-.card ul li a {
+ul li a {
   color: #83a5ee;
   text-decoration: none;
 }
 
-.card ul li a:hover {
+ul li a:hover {
   text-decoration: underline;
 }
 
