@@ -10,7 +10,7 @@ const AboutModal: React.FC = () => {
         <p className='italic'>Currently seeking full-time product design opportunities. Available for contract development work and custom art commissions.</p>
     
         <a href="https://www.linkedin.com/in/megan-kossa-a0a4351">View my LinkedIn profile</a><br/>
-        <a href="/public/Megan Kossa - Developer and Designer May 2025.pdf">Download Resume</a>
+        <a href="/Megan Kossa - Developer and Designer May 2025.pdf">Download Resume</a>
     </div>
   );
 }
