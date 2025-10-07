@@ -63,13 +63,13 @@ export const projects: Project[] = [
     shortDescription: 'A web application to facilitate playing Texas 42 dominoes online with friends, featuring a game lobby, matchmaking, and scoring.',
     fullDescription:
       'Shake 42 is a web application designed to facilitate playing Texas 42 dominoes online with friends. It features game management, scoring, and a user-friendly interface to enhance the gaming experience.<br>My role focused on UX design, creating wireframes and mockups to ensure an intuitive user experience. I collaborated with developers to implement the designs and iterated based on user feedback. Unfortunately, the project was shelved due to funding issues, but it provided valuable experience in web app design and user interaction. Full case study coming soon!',
-    image: '',
+    image: '/portfolio/shake-42/cover.webp',
     tags: ['Web App', 'Game', 'Figma'],
     category: 'web app',
     duration: '3 months',
     date: 'August 2024',
     role: 'UX Designer, CSS Consultant',
-    technologies: ['Figma'],
+    technologies: ['Figma', "Gimp"],
     challenges: [
       'Determining the requirements for online play of a traditionally in-person game',
       'Designing an intuitive user interface for account setup and online matchmaking',
@@ -81,10 +81,10 @@ export const projects: Project[] = [
       'Mocked up several color schemes and themes for the app, allowing stakeholders to choose their favorite'
     ],
     gallery: [
-      { source: '', caption: 'Game interface' },
-      { source: '', caption: 'Responsive design' }
+      { source: '/portfolio/shake-42/logged-in-landing-settings.webp', caption: 'Logged in landing page with the settings modal open' },
+      { source: '/portfolio/shake-42/game-page-desktop.webp', caption: 'A game in progress, showing chat window, play area, teams and score display' }
     ],
-    links: { live: 'https://passthedice.example.com', source: 'https://github.com/user/pass-the-dice' }
+    // links: { live: 'https://passthedice.example.com', source: 'https://github.com/user/pass-the-dice' }
   }
   // add more projects here
 ];
