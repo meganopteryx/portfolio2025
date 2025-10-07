@@ -54,3 +54,17 @@ export default tseslint.config({
   },
 })
 ```
+
+## Modal system (developer notes)
+
+The `feature/case-study-tweaks` branch adds a small global modal system. Quick notes:
+
+- `ModalProvider` is mounted in `src/main.tsx` so the modal manager is available globally.
+- `useModal()` is available from `src/hooks/useModal.ts` and returns `{ openModal, closeModal, openConfirm }`.
+- `openModal(node, opts?)` opens a modal with the supplied React node as content.
+- `closeModal(id?)` closes the top modal or the modal with a specific id.
+- `openConfirm(renderer)` is a Promise-based convenience for confirm-style dialogs and remains available.
+- `Modal` uses `focus-trap` for keyboard focus trapping and manages scroll lock, Escape-to-close, and click-outside-to-close.
+
+Example usage is in the project root README section created on the branch; see `src/hooks/useModal.ts` and `src/components/modal-context.tsx` for implementation details.
+

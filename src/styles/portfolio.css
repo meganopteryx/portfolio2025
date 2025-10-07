@@ -1,32 +1,35 @@
-.caseGrid {
+/* Portfolio styles — derived from case-studies.css */
+
+.project-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
 @media (min-width: 768px) {
-  .caseGrid {
+  .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .caseCard img {
+  .project-card img {
     max-height: 200px;
     object-fit: cover;
   }
 }
 
 @media (min-width: 1100px) {
-  .caseGrid {
+  .project-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .caseCard img {
+  .project-card img {
     max-height: 200px;
     object-fit: cover;
   }
 }
 
-.caseCard {
+.project-card {
   display: block;
   text-decoration: none;
+  width: 100%;
   color: inherit;
   border: 1px solid #3975aa;
   border-radius: 1rem;
@@ -34,7 +37,7 @@
   background: #132334;
 }
 
-.caseCard img {
+.project-card img {
   width: 100%;
   height: auto;
   max-height: 200px;
@@ -43,7 +46,7 @@
   margin-bottom: 0.6rem;
 }
 
-.caseHero img {
+.project-hero img {
   width: 100%;
   max-height: 420px;
   object-fit: cover;
@@ -51,24 +54,10 @@
   margin-top: 1.2em;
 }
 
-.caseBody {
+.project-body {
   margin-top: 1rem;
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  word-wrap: break-word; /* Break long words if needed */
-}
-
-/* Ensure case study detail page doesn't overflow */
-.caseHero {
   overflow-x: hidden;
-}
-
-.caseHero img {
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: 0.75rem;
-  margin-top: 1.2em;
-  max-width: 100%; /* Ensure image doesn't exceed container */
+  word-wrap: break-word;
 }
 
 figure img {
@@ -88,10 +77,10 @@ figure.large{
 
 figure.left{
   float: left;
-  margin: 0 .8rem .8rem 0; 
+  margin: 0 .8rem .8rem 0;
 }
 
 figure.right{
   float: right;
-  margin: 0 0 .8rem .8rem; 
+  margin: 0 0 .8rem .8rem;
 }

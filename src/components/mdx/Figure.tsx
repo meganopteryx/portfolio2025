@@ -4,15 +4,16 @@ interface FigureProps {
   children: ReactNode;
   caption?: string;
   credit?: string;
+  className?: string;
   align?: 'left' | 'center' | 'right';
   style?: React.CSSProperties;
 }
 
-export default function Figure({ children, caption, credit, align = 'center', style }: FigureProps) {
+export default function Figure({ children, caption, credit, className = '', align = 'center', style }: FigureProps) {
   return (
     <figure
+      className={className}
       style={{
-        margin: '0 0 0.5rem 0',
         textAlign: align,
         ...style
       }}

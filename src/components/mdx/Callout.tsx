@@ -5,16 +5,18 @@ type CalloutVariant = 'quote' | 'tip' | 'summary';
 interface CalloutProps {
   children: ReactNode;
   variant?: CalloutVariant;
+  className?: string;
   title?: string; // for tip/summary
   author?: string; // for quote
   source?: string; // for quote
   align?: 'left' | 'center' | 'right';
 }
 
-export default function Callout({ children, variant = 'quote', title, author, source, align = 'left' }: CalloutProps) {
+export default function Callout({ children, variant = 'quote', className, title, author, source, align = 'left' }: CalloutProps) {
   if (variant === 'quote') {
     return (
       <figure
+        className={className}
         style={{
           margin: '1rem 0',
           padding: '1rem 1.25rem',
@@ -58,6 +60,7 @@ export default function Callout({ children, variant = 'quote', title, author, so
 
   return (
     <div
+      className={className}
       style={{
         margin: '1rem 0',
         padding: '0.9rem 1.1rem',
