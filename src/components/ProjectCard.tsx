@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Project } from '../content/portfolio';
+import type { Project } from '../content/portfolio/projectlist';
 import useModal from '../hooks/useModal';
 import ProjectPreviewModal from './ProjectPreviewModal';
 

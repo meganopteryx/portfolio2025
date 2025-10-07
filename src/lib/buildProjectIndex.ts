@@ -1,4 +1,4 @@
-import type { Project } from '../content/portfolio';
+import type { Project } from '../content/portfolio/projectlist';
 
 interface CaseStudyFrontmatter {
   title?: string;
@@ -68,7 +68,7 @@ function hashCode(str: string) {
   return h;
 }
 
-import { projects as baseProjects } from '../content/portfolio';
+import { projects as baseProjects } from '../content/portfolio/projectlist';
 
 export function getAllProjects(): Project[] {
   const mdx = mdxCaseStudiesToProjects();

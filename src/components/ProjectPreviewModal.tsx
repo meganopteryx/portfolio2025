@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Project } from '../content/portfolio/index';
+import type { Project } from '../content/portfolio/projectlist';
 import useModal from '../hooks/useModal';
 
 const ProjectPreviewModal: React.FC<{ project: Project }> = ({ project }) => {
@@ -23,7 +23,8 @@ const ProjectPreviewModal: React.FC<{ project: Project }> = ({ project }) => {
       {/* Modal content grid */}
       <div className="modal-content-grid">
         <div className="project-overview">
-            <h3><i data-lucide="tag"></i>Project Overview</h3>
+            <h3>Project Overview</h3>
+            {/* <i data-lucide="tag"></i> */}
             <p className="project-description">{project.shortDescription ?? project.description}</p>
         
             {project.challenges ? (
@@ -49,23 +50,24 @@ const ProjectPreviewModal: React.FC<{ project: Project }> = ({ project }) => {
             ) : null}
         </div>
     </div>
+    {/* TODO: fix sidebar floating */}
     <div className="project-sidebar">
         <div className="project-info-card">
             <h4>Project Details</h4>
             
             {project.duration ? (
             <div className="project-detail">
-                <i data-lucide="clock"></i>
+                {/* <i data-lucide="clock"></i> */}
                 <span>Duration: {project.duration}</span>
             </div>) : null}
 
             {project.date ? (<div className="project-detail">
-                <i data-lucide="calendar"></i>
+                {/* <i data-lucide="calendar"></i> */}
                 <span>Completed: {project.date}</span>
             </div>) : null}
 
             {project.role ? (<div className="project-detail">
-                <i data-lucide="user"></i>
+                {/* <i data-lucide="user"></i> */}
                 <span>Role: {project.role}</span>
             </div>) : null}
         </div>
@@ -79,13 +81,13 @@ const ProjectPreviewModal: React.FC<{ project: Project }> = ({ project }) => {
         <div className="modal-actions">
             {project.links?.live ? (
                 <a href="{project.links.live}" className="modal-btn modal-btn-primary" target="_blank" rel="noreferrer">
-                    <i data-lucide="external-link"></i>
+                    {/* <i data-lucide="external-link"></i> */}
                     View Live Project
                 </a>
             ) : null}
             {project.links?.source ? (
                 <a href="{project.links.source}" className="modal-btn modal-btn-outline" target="_blank" rel="noreferrer">
-                    <i data-lucide="github"></i>
+                    {/* <i data-lucide="github"></i> */}
                     View Source Code
                 </a>
             ) : null}
@@ -93,7 +95,7 @@ const ProjectPreviewModal: React.FC<{ project: Project }> = ({ project }) => {
             {project.slug ? (
                 <a href={`/case-studies/${project.slug}`} className="modal-btn modal-btn-primary" onClick={() => closeModal()}
                 >
-                    <i data-lucide="book-open"></i>
+                    {/* <i data-lucide="book-open"></i> */}
                     Read full case study
                 </a>
             ) : null}

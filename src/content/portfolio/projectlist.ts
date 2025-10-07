@@ -27,7 +27,7 @@ export const projects: Project[] = [
       'A piece of commissioned costume jewelry including a real scarab, themed around the mythical scarab of ancient Egyptian fame.',
     fullDescription:
       'This piece was commissioned by a client who wanted a unique piece of jewelry for a special event. The design was inspired by the ancient Egyptian scarab, symbolizing transformation and protection. I sourced a real scarab specimen, carefully preserved and mounted it in resin to create the pendant. Amethyst was chosen as the primary gemstone, representing healing and tranquility, but to reduce cost I decided to make a resin-cast version, which also allowed more control over the final result. Another cost-saving measure was to use polymer clay for the rest of the design instead of metalwork, additionally reducing the finished weight of the piece. The client was thrilled with the final product, which was both visually striking and rich in symbolism.',
-    image: '',
+    image: '/portfolio/amethyst-scarab/cover.webp',
     tags: ['Art', 'Jewelry', 'Resin', 'Sculpture'],
     category: 'artwork',
     duration: '3 months',
@@ -48,10 +48,12 @@ export const projects: Project[] = [
       'Tested the final piece for comfort and wearability before delivering to the client'
     ],
     gallery: [
-      { source: '', caption: 'Initial sketches, created during the first client meeting' },
-      { source: '', caption: 'The posed scarab. My only specimen of this species!' },
-      { source: '', caption: 'Multiple resin "amethyst" options. Spares could be used elsewhere.' },
-      { source: '', caption: 'Additional themed earrings created as an add-on product' }
+      // { source: '', caption: 'Initial sketches, created during the first client meeting' },
+      { source: '/portfolio/amethyst-scarab/amethyst-scarab-final.webp', caption: 'The finished piece' },
+      { source: '/portfolio/amethyst-scarab/earrings.webp', caption: 'Additional themed earrings created as an add-on product' },
+      { source: '/portfolio/amethyst-scarab/scarab-posed.webp', caption: 'The posed scarab. My only specimen of this species!' },
+      // { source: '', caption: 'Multiple resin "amethyst" options. Spares could be used elsewhere.' },
+      { source: '/portfolio/amethyst-scarab/workspace.webp', caption: 'The workspace where the magic happened' }
     ]
   },
   {
