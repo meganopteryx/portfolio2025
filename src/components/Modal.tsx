@@ -114,6 +114,30 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onRequestClose, children, labelle
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
 
+  // Scroll modal content to top when the modal finishes entering.
+  useEffect(() => {
+    if (animState !== 'open' || !contentRef.current) return;
+    // run on next frame so DOM is fully painted and any inner nodes exist
+    requestAnimationFrame(() => {
+      try {
+        // prefer a scrollable inner element with class `.modal-body` if present,
+        // otherwise fall back to the modal content container itself.
+        // TypeScript can be conservative about the element type returned from
+        // querySelector. Cast to HTMLElement so we can access scrolling APIs.
+        const scrollEl = (contentRef.current!.querySelector('.modal-body') ?? contentRef.current!) as HTMLElement;
+        if (scrollEl && 'scrollTo' in scrollEl) {
+          // smooth behavior on open per user request
+          scrollEl.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        } else if (scrollEl) {
+          // Fallback assignment with a cast to avoid strict-typing issues in some TS configs
+          (scrollEl as any).scrollTop = 0;
+        }
+      } catch {
+        // ignore any runtime errors
+      }
+    });
+  }, [animState]);
+
   
 
   if (!isOpen || !portalRoot) return null;
