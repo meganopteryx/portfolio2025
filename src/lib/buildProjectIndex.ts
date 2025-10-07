@@ -11,7 +11,7 @@ interface CaseStudyFrontmatter {
   hideFromIndex?: boolean;
   role?: string;
   tools?: string[];
-  gallery?: { image: string; caption?: string }[];
+  gallery?: { source: string; caption?: string }[];
   links?: { live?: string; source?: string };
 }
 
