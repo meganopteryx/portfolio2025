@@ -27,7 +27,6 @@ function App() {
     <Router>
       <Routes>
         {/* <Route path="/" element={<QuickLinksLanding />} />  */}
-        {/* TODO: switch path / to use Homepage instead */}
         <Route path="/" element={<HomePage />} />
         <Route path="/case-studies" element={<Layout><CaseStudies /></Layout>} />
         <Route path="/case-studies/:slug" element={<Layout><CaseStudyDetail /></Layout>} />
