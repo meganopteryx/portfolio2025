@@ -7,7 +7,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(to bottom, #1a2332, #0f1419);
   background-attachment: fixed;
@@ -221,7 +221,7 @@ ul li a:hover {
 }
 
 /* Light Mode Adjustments */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #e4ebf1;
@@ -243,7 +243,7 @@ ul li a:hover {
   .logo:hover {
     filter: drop-shadow(0 0 1em #6b92c499);
   }
-}
+} */
 
 /* Case studies: imported from main.tsx to satisfy PostCSS ordering */
 
