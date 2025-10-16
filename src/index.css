@@ -221,7 +221,7 @@ ul li a:hover {
 }
 
 /* Light Mode Adjustments */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #e4ebf1;
@@ -243,7 +243,7 @@ ul li a:hover {
   .logo:hover {
     filter: drop-shadow(0 0 1em #6b92c499);
   }
-}
+} */
 
 /* Case studies: imported from main.tsx to satisfy PostCSS ordering */
 
