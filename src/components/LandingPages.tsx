@@ -1,8 +1,6 @@
 import { MeganopteryxLogo } from './MeganopteryxLogo.tsx';
 import { SloganRoulette } from './functionalbits/SloganRoulette.tsx';
 
-//TODO: update types for this for some reason it's Any type
-
 function QuickLinksLanding() {
     return (
         <div className="main">

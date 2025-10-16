@@ -1,15 +1,15 @@
 import lightLogo from '../assets/Logo-light.svg'
-import darkLogo from '../assets/Logo-dark.svg'
+// import darkLogo from '../assets/Logo-dark.svg'
 
 function MeganopteryxLogo() {
     return (
         <picture>
-            <source
-                srcSet={lightLogo}
-                media="(prefers-color-scheme: dark)"
-            />
+            {/* <source
+                srcSet={darkLogo}
+                media="(prefers-color-scheme: light)"
+            /> */}
             <img
-                src={darkLogo}
+                src={lightLogo}
                 alt="Meganopteryx Design logo"
             />
         </picture>
