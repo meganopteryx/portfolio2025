@@ -33,7 +33,7 @@ function HomePage() {
                         {/* TODO: Make the commission form if needed*/}
                     </ul>
                 </div>
-                <a href="/Megan Kossa - Developer and Designer May 2025.pdf" className="card"><h2>Download Resume</h2></a>
+                <a href="/Megan Kossa - Developer and Designer - May 2026.pdf" className="card"><h2>Download Resume</h2></a>
             </div>
         </div>
         </Layout>
