@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import Layout from '../components/Layout'
 import useModal from '../hooks/useModal'
 import ContactModal from '../components/modals/ContactModal'
-import AboutModal from '../components/modals/AboutModal'
 
 function HomePage() {
     const { openModal } = useModal();
@@ -17,9 +16,9 @@ function HomePage() {
                 <Link className="fancy card portfolioCard" to="/portfolio">
                     <h2>Portfolio</h2>
                 </Link>
-                <button className="fancy card aboutMeCard" onClick={() => openModal(<AboutModal />)}>
+                <Link className="fancy card aboutMeCard" to="/about">
                     <h2>About Me</h2>
-                </button>
+                </Link>
                 <button className="fancy card contactCard" onClick={() => openModal(<ContactModal />)}>
                     <h2>Contact Me</h2>
                 </button>

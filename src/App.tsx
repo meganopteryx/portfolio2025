@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import CaseStudies from './pages/case-studies/CaseStudies';
 import CaseStudyDetail from './pages/case-studies/CaseStudyDetail';
 import { HomePage } from './pages/Home';
+import AboutPage from './pages/About';
 import Portfolio from './pages/Portfolio';
 import { useEffect } from 'react';
 
@@ -27,8 +28,8 @@ function App() {
     <Router>
       <Routes>
         {/* <Route path="/" element={<QuickLinksLanding />} />  */}
-        {/* TODO: switch path / to use Homepage instead */}
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<Layout><AboutPage /></Layout>} />
         <Route path="/case-studies" element={<Layout><CaseStudies /></Layout>} />
         <Route path="/case-studies/:slug" element={<Layout><CaseStudyDetail /></Layout>} />
   <Route path="/portfolio" element={<Layout><Portfolio /></Layout>} />
