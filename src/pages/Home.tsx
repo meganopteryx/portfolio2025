@@ -1,4 +1,3 @@
-//import { MeganopteryxLogo } from '../components/MeganopteryxLogo'
 import { Header } from '../components/Header'
 import { Link } from 'react-router-dom'
 import Layout from '../components/Layout'

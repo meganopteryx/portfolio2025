@@ -220,30 +220,6 @@ ul li a:hover {
   text-decoration: underline;
 }
 
-/* Light Mode Adjustments */
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #e4ebf1;
-  }
-  a {
-    color: #133959;
-  }
-  a:hover {
-    color: #2c6495;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-
-  .card {
-    color:#FFFFFF;
-  }
-
-  .logo:hover {
-    filter: drop-shadow(0 0 1em #6b92c499);
-  }
-} */
 
 /* Case studies: imported from main.tsx to satisfy PostCSS ordering */
 

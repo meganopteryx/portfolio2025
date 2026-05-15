@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-// import { QuickLinksLanding } from './components/LandingPages';
 import Layout from './components/Layout';
 import CaseStudies from './pages/case-studies/CaseStudies';
 import CaseStudyDetail from './pages/case-studies/CaseStudyDetail';
@@ -27,7 +26,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/" element={<QuickLinksLanding />} />  */}
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<Layout><AboutPage /></Layout>} />
         <Route path="/case-studies" element={<Layout><CaseStudies /></Layout>} />
