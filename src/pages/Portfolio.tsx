@@ -2,7 +2,6 @@ import React from 'react';
 import { getAllProjects } from '../lib/buildProjectIndex';
 import ProjectCard from '../components/ProjectCard';
 import Layout from '../components/Layout';
-import '../styles/portfolio.css';
 
 const PortfolioPage: React.FC = () => {
   const projects = getAllProjects();

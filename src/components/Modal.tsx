@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 import { createFocusTrap, FocusTrap as FocusTrapType } from 'focus-trap';
-import '../styles/globals.css';
-import '../styles/modal-components.css';
 
 interface ModalProps {
   isOpen: boolean;
