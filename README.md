@@ -8,7 +8,7 @@ Also debating moving it to Astro so we get server-side rendering, which is nice 
 
 There's a balance between using the most up-to-date CSS styles and React tech, and getting the thing done, as usual. As soon as you publish something, it's out of date. The endless struggle.
 
-## ✨ Expect weird random changes! ✨ **
+## ✨ Expect weird random changes! ✨
 
 I get to be indecisive on this project!
 
