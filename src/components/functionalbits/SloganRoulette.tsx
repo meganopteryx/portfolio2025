@@ -2,7 +2,7 @@
 const slogans = [
     "Don't let your dreams stay dreams!", 
     "Twenty Three is Number One!",
-    "There are many things",
+    "There are many things...",
     "Can you fly if you fall off?",
     "Expand-a-band-band ... art stash!",
     "Purchase the means of production!",
