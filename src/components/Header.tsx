@@ -1,13 +1,16 @@
 import { MeganopteryxLogo } from './MeganopteryxLogo'
+import './Header.css'
 
-//Landing page displays differently than sub pages. Maybe a different component idk
 function Header() {
     return (
-        <div className="logo pageWidthLimiter">
-            <div className="logoGlyph">{MeganopteryxLogo()}</div>
-            <h1 className="logoText">Meganopteryx<br className="hidden md-visible" /> Design</h1>
-        </div>
-        )
+        <header className="siteHeader pageWidthLimiter">
+            <div className="siteHeader-logo">
+                <div className="siteHeader-glyph"><MeganopteryxLogo /></div>
+                <h1 className="siteHeader-title">Meganopteryx<br />Design</h1>
+            </div>
+            <p className="siteHeader-tagline">3D Printing ∙ Product Design ∙ Illustration ∙ Web Development</p>
+        </header>
+    )
 };
 
 export { Header };

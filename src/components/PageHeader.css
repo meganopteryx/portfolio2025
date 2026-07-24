@@ -1,0 +1,37 @@
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pageHeader-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pageHeader-glyph {
+  flex: none;
+  width: 79px;
+  height: 79px;
+}
+
+.pageHeader-glyph img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pageHeader-logoText {
+  margin: 0;
+  font-family: var(--title-page-family);
+  font-weight: var(--title-page-weight);
+  font-size: var(--title-page-size-rem);
+  line-height: var(--title-page-line-height-rem);
+  color: var(--light-text);
+  white-space: nowrap;
+}
+
+.pageHeader h1 {
+  margin: 0;
+}

@@ -36,11 +36,15 @@
 /* Links */
 a {
   font-weight: 500;
-  color: #83a5ee;
+  color: var(--blue-accent);
   text-decoration: inherit;
 }
-a:hover {
-  color: #668bda;
+/* :not([class]) keeps this scoped to plain text links (MDX content, ul li a,
+   ContactModal, etc.) — anything with its own class is a styled component
+   (ShopCard, SocialIcons, Button) and should define its own hover treatment,
+   not inherit this one. */
+a:not([class]):hover {
+  filter: brightness(1.15) drop-shadow(var(--glow-blue-accent));
 }
 
 body {
@@ -64,8 +68,10 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 3.2rem;
-  line-height: 1.1;
+  font-family: var(--title-large-card-family);
+  font-weight: var(--title-large-card-weight);
+  font-size: var(--title-large-card-size-rem);
+  line-height: var(--title-large-card-line-height-rem);
 }
 
 h2 {
@@ -139,39 +145,42 @@ ul li a:hover {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  padding: 16px;
+  font-family: var(--body-text-family);
+  font-size: var(--body-text-size-rem);
+  font-weight: var(--body-text-weight);
+  background-color: var(--brand-card-bg);
   cursor: pointer;
   transition: border-color 0.25s;
   text-align: left;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--blue-accent);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 2px solid var(--blue-accent);
+  outline-offset: 2px;
 }
 
 code {
-  background: 'rgba(0,0,0,0.06)'; /*TODO: use a var */
+  /* No existing brand var is a great fit for a subtle code-chip tint on dark —
+     flagged for Megan, using brand-card-bg-hover as a reasonable stand-in */
+  background: var(--brand-card-bg-hover);
   border-radius: 6px;
   padding: 0.15rem 0.35rem;
   font-family:
-        'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
-  font-size: 0.95rem,
+        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95rem;
 }
 
 /* TODO: check if this is actually used */
 pre {
-  background: '#0d1117';/*TODO: use a var */
-  color: '#c9d1d9';/*TODO: use a var */
+  background: var(--dark-bg);
+  color: #c9d1d9; /* TODO: no close brand var for this muted code-text grey — flagged for Megan */
   border-radius: 10px;
   padding: 1rem;
-  overflow-x: 'auto';
+  overflow-x: auto;
 }
 
 /* Utility */
@@ -202,7 +211,7 @@ TODO: put into component CSS modules*/
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 1em #1f78ee99);
+  filter: drop-shadow(var(--glow-blue-accent));
 }
 
 .logoGlyph {
@@ -225,7 +234,7 @@ TODO: put into component CSS modules*/
 /* Slogan Styles */
 .slogan {
   font-size: 1.2em;
-  color: #5d99ce;
+  color: var(--blue-accent);
   font-style: italic;
   margin: 1em;
   text-align: center; /* Center-align the slogan */
@@ -241,16 +250,16 @@ TODO: put into component CSS modules*/
 
 .card {
   padding: 1rem 1.5rem;
-  background-color: #213547;
+  background-color: var(--brand-card-bg);
   border-radius: 1rem;
-  border: 1px solid #3975aa;
+  border: 1px solid #3975aa; /* TODO: no close brand var for this border blue — flagged for Megan */
   box-shadow:inset 0 0 0 0 transparent;
   transition: background-color 0.7s ease;
-  color: #FFFFFF;
+  color: var(--light-text);
 }
 
 .card:hover {
-  background-color: #182a3c;
+  background-color: var(--brand-card-bg-hover);
   box-shadow:inset 0 0 1rem 0 rgba(255, 255, 255, 0.2);
 }
 
@@ -277,7 +286,7 @@ TODO: put into component CSS modules*/
 
   .slogan {
     font-size: 1.5em; /* Larger font size for tablets */
-    filter: drop-shadow(0 0 .25em #1f78ee99);
+    filter: drop-shadow(var(--glow-blue-accent));
   }
 }
 

@@ -1,0 +1,34 @@
+.siteFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  box-sizing: border-box;
+  background: var(--dark-bg);
+  border: 1px solid var(--light-text);
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.siteFooter-copyright {
+  margin: 0;
+  font-family: var(--body-text-family);
+  font-weight: var(--body-text-weight);
+  color: var(--light-text);
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .siteFooter {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .siteFooter-copyright {
+    flex: 1;
+  }
+}

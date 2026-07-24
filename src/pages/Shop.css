@@ -1,0 +1,6 @@
+.shopPage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 1.2rem;
+}

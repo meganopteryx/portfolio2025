@@ -59,7 +59,7 @@
   --caption-text-size-rem: 0.75rem;
   --caption-text-style: italic;
 
-  --title-medium-card-family: "Nunito Sans";
+  --title-medium-card-family: "Nunito";
   --title-medium-card-size: 32px;
   --title-medium-card-size-rem: 2rem;
   --title-medium-card-weight: 700;
@@ -85,10 +85,11 @@
   --background-gradient-stop-1-position: 0%;
   --background-gradient-stop-2-color: #1a2024;
   --background-gradient-stop-2-position: 100%;
-  --background-gradient: linear-gradient(to bottom, var(--background-gradient-stop-1-color), var(--background-gradient-stop2-color));
+  --background-gradient: linear-gradient(to bottom, var(--background-gradient-stop-1-color) var(--background-gradient-stop-1-position), var(--background-gradient-stop-2-color) var(--background-gradient-stop-2-position));
 
   /* SHADOWS */
   --image-panel-glow: inset 0 0 8px 8px rgba(255 255 255 / 0.19);
+  --glow-blue-accent: 0 0 0.3em color-mix(in srgb, var(--blue-accent) 60%, transparent);
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);

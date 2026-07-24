@@ -1,0 +1,83 @@
+.homeCardGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .homeCardGrid {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.homeCard {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 121px;
+  border: 2px solid var(--light-text);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--image-panel-glow);
+  text-decoration: none;
+  transition: border-color 0.2s ease, filter 0.2s ease;
+}
+
+.homeCard-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+/* Backstop for text contrast over photos — the Figma glow-text effect alone
+   isn't guaranteed to hold up against whatever final photo lands here. */
+.homeCard-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0) 60%);
+  pointer-events: none;
+}
+
+.homeCard-title {
+  position: absolute;
+  left: 18px;
+  bottom: 16px;
+  font-family: var(--title-small-card-family);
+  font-weight: var(--title-small-card-weight);
+  font-size: var(--title-small-card-size-rem);
+  color: var(--light-text);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.homeCard:hover {
+  border-color: var(--blue-accent);
+  filter: drop-shadow(var(--glow-blue-accent));
+}
+
+.homeCard:hover .homeCard-image {
+  box-shadow: inset 0 0 30px 20px rgba(0, 0, 0, 0.5);
+  filter: brightness(0.75);
+}
+
+.homeCard:focus-visible {
+  outline: 2px solid var(--blue-accent);
+  outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+  .homeCard {
+    height: 363px;
+    flex: 1;
+  }
+
+  .homeCard-title {
+    font-family: var(--title-large-card-family);
+    font-weight: var(--title-large-card-weight);
+    font-size: var(--title-large-card-size-rem);
+  }
+}

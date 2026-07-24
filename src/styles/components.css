@@ -1,32 +1,10 @@
 /* Consolidated Components CSS */
 /* Combines modal, portfolio, case studies, and utility styles */
 
+/* TODO: split these out into css modules for each of the components they apply to. This file should not exist when that's done*/
+
 /* ===== VARIABLES ===== */
 :root {
-  --blue-50: #eff6ff;
-  --blue-100: #dbeafe;
-  --blue-200: #bfdbfe;
-  --blue-300: #93c5fd;
-  --blue-400: #60a5fa;
-  --blue-500: #3b82f6;
-  --blue-600: #2563eb;
-  --blue-700: #1d4ed8;
-  --blue-800: #1e40af;
-  --blue-900: #1e3a8a;
-
-  --slate-50: #f8fafc;
-  --slate-100: #f1f5f9;
-  --slate-200: #e2e8f0;
-  --slate-300: #cbd5e1;
-  --slate-400: #94a3b8;
-  --slate-500: #64748b;
-  --slate-600: #475569;
-  --slate-700: #334155;
-  --slate-800: #1e293b;
-  --slate-900: #0f172a;
-
-  --pink-400: #f472b6;
-
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -79,38 +57,14 @@
 }
 
 /* ===== HOME PAGE CARDS ===== */
-.fancy {
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.fancy:hover {
-  transform: translateY(-4px);
-  border-color: rgba(37, 99, 235, 0.5);
-  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
-}
-
+/* .fancy/.aboutMeCard/.contactCard/.portfolioCard removed — Home.tsx no longer
+   uses them (rebuilt to match Figma). .blurb kept: still used by the unrouted
+   LandingPages.tsx (see note flagged separately). */
 .blurb {
   font-size: 0.875rem;
   color: var(--blue-200);
   line-height: 1.6;
   margin-top: 8px;
-}
-
-.aboutMeCard,
-.contactCard,
-.portfolioCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.aboutMeCard h2,
-.contactCard h2,
-.portfolioCard h2 {
-  margin: 0;
 }
 
 .app-container {

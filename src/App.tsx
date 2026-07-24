@@ -5,6 +5,8 @@ import CaseStudyDetail from './pages/case-studies/CaseStudyDetail';
 import { HomePage } from './pages/Home';
 import AboutPage from './pages/About';
 import Portfolio from './pages/Portfolio';
+import Shop from './pages/Shop';
+import Footer from './components/Footer';
 import { useEffect } from 'react';
 
 function ArchiveRedirect() {
@@ -31,6 +33,7 @@ function App() {
         <Route path="/case-studies" element={<Layout><CaseStudies /></Layout>} />
         <Route path="/case-studies/:slug" element={<Layout><CaseStudyDetail /></Layout>} />
   <Route path="/portfolio" element={<Layout><Portfolio /></Layout>} />
+        <Route path="/shop" element={<Layout footer={<Footer />}><Shop /></Layout>} />
         <Route path="/archive/*" element={<ArchiveRedirect />} />
       </Routes>
     </Router>

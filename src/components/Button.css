@@ -1,0 +1,63 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: var(--title-small-card-family, var(--body-text-family));
+  font-weight: var(--title-small-card-weight);
+  font-size: var(--title-small-card-size-rem);
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease, filter 0.2s ease;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--blue-accent);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: var(--blue-accent);
+  border: 2px solid var(--blue-accent);
+  color: #000000;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.15);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--blue-accent);
+  color: var(--blue-accent);
+}
+
+.btn-secondary:hover {
+  background: var(--blue-accent);
+  color: #000000;
+}
+
+.btn-tertiary {
+  background: transparent;
+  border: 2px solid var(--light-text);
+  color: var(--light-text);
+}
+
+.btn-tertiary:hover {
+  background: var(--light-text);
+  color: var(--dark-bg);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 2px solid transparent;
+  color: var(--blue-accent);
+}
+
+.btn-ghost:hover {
+  text-decoration: underline;
+}
