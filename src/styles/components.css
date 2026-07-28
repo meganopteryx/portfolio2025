@@ -163,40 +163,6 @@
   padding: 20px;
 }
 
-.modal-header {
-  position: relative;
-  margin-bottom: 32px;
-}
-
-.modal-header-image {
-  height: 256px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.modal-header-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(45deg, rgba(37, 99, 235, 0.2), rgba(59, 130, 246, 0.2));
-  z-index: 10;
-}
-
-.modal-header img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.modal-header-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(180deg, transparent 0%, var(--slate-900) 100%);
-  padding: 24px;
-}
-
 .modal-title {
   font-size: 1.875rem;
   margin-bottom: 8px;
@@ -208,138 +174,10 @@
   }
 }
 
-.modal-subtitle {
-  color: var(--blue-200);
-  font-size: 1.125rem;
-}
-
-.modal-content-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  margin-bottom: 32px;
-  padding: 0 24px;
-}
-
-@media (min-width: 1024px) {
-  .modal-content-grid {
-    grid-template-columns: 2fr 1fr;
-  }
-}
-
-.project-overview h3 {
-  font-size: 1.25rem;
-  color: var(--blue-400);
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .project-description {
   color: var(--blue-200);
   margin-bottom: 24px;
   line-height: 1.6;
-}
-
-.project-section {
-  margin-bottom: 24px;
-}
-
-.project-section h4 {
-  font-size: 1.125rem;
-  color: var(--blue-400);
-  margin-bottom: 12px;
-}
-
-.project-list {
-  list-style: none;
-  padding: 0;
-}
-
-.project-list li {
-  color: var(--blue-200);
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
-.project-list li::before {
-  content: "‣";
-  top: 0;
-  color: var(--blue-400);
-  margin-top: 0;
-  flex-shrink: 0;
-  background-image: none;
-}
-
-.project-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.project-info-card {
-  background: rgba(30, 41, 59, 0.5);
-  border-radius: 8px;
-  padding: 24px;
-  border: 1px solid rgba(37, 99, 235, 0.2);
-}
-
-.project-info-card h4 {
-  font-size: 1.125rem;
-  color: var(--blue-400);
-  margin-bottom: 16px;
-  margin-top: 0;
-}
-
-.project-detail {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--blue-200);
-  margin-bottom: 12px;
-  font-size: 0.875rem;
-}
-
-.project-detail:last-child {
-  margin-bottom: 0;
-}
-
-.project-detail svg {
-  color: var(--blue-400);
-  width: 16px;
-  height: 16px;
-}
-
-.project-role {
-  color: var(--blue-200);
-}
-
-.project-role .label {
-  color: var(--blue-400);
-  font-size: 0.875rem;
-}
-
-.project-role .value {
-  font-size: 0.875rem;
-  margin-left: 8px;
-}
-
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.tech-tag {
-  font-size: 0.75rem;
-  padding: 4px 8px;
-  border: 1px solid rgba(37, 99, 235, 0.3);
-  color: var(--blue-300);
-  border-radius: 4px;
-  background: transparent;
 }
 
 .modal-actions {

@@ -1,0 +1,70 @@
+.portfolioCard {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  background: var(--brand-card-bg);
+  border: 2px solid var(--light-text);
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--light-text);
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  transition: border-color 0.2s ease, filter 0.2s ease;
+}
+
+.portfolioCard:hover {
+  border-color: var(--blue-accent);
+  filter: brightness(1.1) drop-shadow(var(--glow-blue-accent));
+}
+
+.portfolioCard:focus-visible {
+  outline: 2px solid var(--blue-accent);
+  outline-offset: 2px;
+}
+
+.portfolioCard-image {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.portfolioCard-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px;
+}
+
+.portfolioCard-title {
+  margin: 0;
+  font-family: var(--title-medium-card-family);
+  font-weight: var(--title-medium-card-weight);
+  font-size: var(--title-medium-card-size-rem);
+}
+
+.portfolioCard-description {
+  margin: 0;
+  font-family: var(--body-text-family);
+  font-size: var(--body-text-size-rem);
+  line-height: var(--body-text-line-height-rem);
+}
+
+.portfolioCard-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.portfolioCard-interaction {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--caption-text-size-rem);
+  color: var(--blue-accent);
+}

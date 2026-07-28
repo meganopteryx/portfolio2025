@@ -1,0 +1,47 @@
+.portfolioPage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 1.2rem;
+}
+
+.portfolioPage-filterHint {
+  margin: 0 0 12px;
+  font-family: var(--title-small-card-family);
+  font-weight: var(--title-small-card-weight);
+  font-size: var(--title-small-card-size-rem);
+}
+
+.portfolioPage-tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.portfolioPage-clearAll {
+  padding: 6px 14px;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.portfolioPage-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.portfolioPage-note {
+  font-style: italic;
+}
+
+@media (min-width: 1024px) {
+  .portfolioPage-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .portfolioPage-grid .portfolioCard {
+    flex: 1 1 calc((100% - 40px) / 3);
+  }
+}
