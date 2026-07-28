@@ -1,8 +1,9 @@
 .aboutPage {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   padding: 40px 1.2rem;
+}
+
+.aboutPage .pageHeader {
+  margin-bottom: 2rem;
 }
 
 .aboutPage-headshot {
@@ -15,7 +16,7 @@
   margin: 0 auto 20px;
 }
 
-.aboutPage-hero .captionedImage {
+.aboutPage .captionedImage {
   margin: 20px auto;
 }
 
@@ -27,7 +28,7 @@
     margin: 0 20px 20px 0;
   }
 
-  .aboutPage-hero .captionedImage {
+  .aboutPage .captionedImage {
     float: right;
     margin: 0 0 20px 20px;
   }

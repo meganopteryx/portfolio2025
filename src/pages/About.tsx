@@ -4,26 +4,22 @@ import headshot from '../assets/about/headshot.png';
 import portrait from '../assets/about/portrait.png';
 import './About.css';
 
-// Wrapped in <Layout> by its route in App.tsx, matching Shop/Portfolio.
 function AboutPage() {
   return (
     <div className="pageWidthLimiter aboutPage">
       <PageHeader title="About Me" />
-      <div className="aboutPage-hero">
-        <img className="aboutPage-headshot" src={headshot} alt="Megan Kossa" />
-        <CaptionedImage
-          src={portrait}
-          alt="Illustrated portrait of the Meganopteryx"
-          caption="Meet the Meganopteryx: my alter-ego and the namesake of this site"
-        />
-        <p>
-          I'm Megan, a designer, developer, and maker. I think of myself as a toymaker: I build things that are useful, engaging, and that you want to pick up again. Whether that's a design system for a corporate product or a resin-dipped gold-tipped earring made from a real hand-collected cicada wing, the goal is the same. Make something of beauty that sparks curiosity and actually works. Good UX gets out of the way. Good design makes you want to come back.
-        </p>
-        <p>
-          I live in Bryan, Texas with my husband and two young boys. My husband is an engineer and data scientist who sees the world in systems and structures. I come at it from the creative and artistic side. We overlap more than you'd expect, which makes for interesting dinner conversation. Our house is full of experiments, unfinished projects, and questions we don't always have answers to.
-        </p>
-      </div>
-      <div className="clearfix" />
+      <img className="aboutPage-headshot" src={headshot} alt="Megan Kossa" />
+      <p>
+        I'm Megan, a designer, developer, and maker. I think of myself as a toymaker: I build things that are useful, engaging, and that you want to pick up again. Whether that's a design system for a corporate product or a resin-dipped gold-tipped earring made from a real hand-collected cicada wing, the goal is the same. Make something of beauty that sparks curiosity and actually works. Good UX gets out of the way. Good design makes you want to come back.
+      </p>
+      <p>
+        I live in Bryan, Texas with my husband and two young boys. My husband is an engineer and data scientist who sees the world in systems and structures. I come at it from the creative and artistic side. We overlap more than you'd expect, which makes for interesting dinner conversation. Our house is full of experiments, unfinished projects, and questions we don't always have answers to.
+      </p>
+      <CaptionedImage
+        src={portrait}
+        alt="Illustrated portrait of the Meganopteryx"
+        caption="Meet the Meganopteryx: my alter-ego and the namesake of this site"
+      />
       <p>
         The boys are budding engineers and enthusiastic playtesters. Watching a six-year-old figure something out, or a two-year-old find a new and creative way to break it, teaches you a lot about what design actually means. A good example: I once printed articulated snakes for the boys, fairly long ones. The first thing they did was start swinging them around and whacking things with the tail. Not exactly what I wanted, so I redesigned them shorter. Now they just hold them and make them wiggle along the floor, which was the idea all along. Children are the best testers, they'll try so many unexpected things. When something doesn't work, you'll know immediately. This is why I care about the details: keeping things safe, keeping things usable, and whenever possible, sparking joy.
       </p>
