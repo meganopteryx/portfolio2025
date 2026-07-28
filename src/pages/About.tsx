@@ -1,5 +1,6 @@
 import PageHeader from '../components/PageHeader';
 import CaptionedImage from '../components/CaptionedImage';
+import Button from '../components/Button';
 import headshot from '../assets/about/headshot.png';
 import portrait from '../assets/about/portrait.png';
 import './About.css';
@@ -29,9 +30,9 @@ function AboutPage() {
       <p>
         I'm available for freelance product design and UX work, development projects, commissions for physical pieces and illustration, and creative collaborations. If something I've made has caught your eye, or you have a project that needs a toymaker, I'd love to hear from you!
       </p>
-      <p>
-        <a href="/Megan Kossa - Developer and Designer - May 2026.pdf">Download Resume</a>
-      </p>
+      <Button variant="ghost" href="/Megan Kossa - Developer and Designer - May 2026.pdf">
+        Download Resume
+      </Button>
     </div>
   );
 }

@@ -54,10 +54,10 @@
 
 .btn-ghost {
   background: transparent;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   color: var(--blue-accent);
 }
 
 .btn-ghost:hover {
-  text-decoration: underline;
+  border-color: var(--blue-accent);
 }
