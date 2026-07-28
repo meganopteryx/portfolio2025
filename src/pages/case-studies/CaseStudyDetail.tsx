@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { mdxComponents } from '../../components/mdx/MDXMappings';
+import './CaseStudyDetail.css';
 import type { ComponentType, ReactElement } from 'react';
 
 interface CaseStudyFrontmatter {

@@ -12,7 +12,7 @@ const Layout = ({ children, showNav = true, footer }: LayoutProps) => {
   const navigate = useNavigate();
 
   return (
-    <div className="app-container" style={{ width: '100%', minHeight: '100vh', margin: 0, padding: 0 }}>
+    <div className="app-container" style={{ width: '100%', minHeight: '100vh', margin: 0, padding: 0, overflowX: 'hidden' }}>
       {/* modal-root sits inside the layout so portal root is present even for nested routes */}
       <div id="modal-root" />
 

@@ -17,7 +17,7 @@ export default function Lightbox({ project }: LightboxProps) {
   const goNext = () => setIndex((i) => (i + 1) % images.length);
 
   return (
-    <div className="modal-body lightbox">
+    <div className="modal-body custom-scrollbar lightbox">
       <div className="lightbox-header">
         <h2 className="lightbox-title">{project.title}</h2>
         {(project.fullDescription ?? project.description) && (

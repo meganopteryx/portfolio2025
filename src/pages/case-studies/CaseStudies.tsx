@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react';
+import './CaseStudies.css';
 
 interface CaseStudyFrontmatter {
   title?: string;
