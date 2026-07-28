@@ -29,7 +29,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<Layout><AboutPage /></Layout>} />
+        <Route path="/about" element={<Layout footer={<Footer />}><AboutPage /></Layout>} />
         <Route path="/case-studies" element={<Layout><CaseStudies /></Layout>} />
         <Route path="/case-studies/:slug" element={<Layout><CaseStudyDetail /></Layout>} />
   <Route path="/portfolio" element={<Layout><Portfolio /></Layout>} />

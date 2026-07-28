@@ -1,0 +1,28 @@
+.captionedImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 210px;
+  margin: 0;
+}
+
+.captionedImage-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 343 / 352;
+  object-fit: cover;
+  background: var(--brand-card-bg);
+  border: 2px solid var(--light-text);
+  border-radius: 2px;
+}
+
+.captionedImage-caption {
+  margin: 0;
+  font-family: var(--caption-text-family);
+  font-size: var(--caption-text-size-rem);
+  font-style: var(--caption-text-style);
+  line-height: 1.4;
+  text-align: center;
+  color: var(--light-text);
+}

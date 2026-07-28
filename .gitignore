@@ -25,3 +25,6 @@ dist-ssr
 
 # Archive files
 /public/archive/*
+
+# Local working notes (not for public repo)
+/.claude/NOTES.md

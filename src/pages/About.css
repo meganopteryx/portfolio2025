@@ -1,0 +1,34 @@
+.aboutPage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 1.2rem;
+}
+
+.aboutPage-headshot {
+  display: block;
+  width: 238px;
+  height: 336px;
+  object-fit: cover;
+  border: 2px solid var(--light-text);
+  border-radius: 2px;
+  margin: 0 auto 20px;
+}
+
+.aboutPage-hero .captionedImage {
+  margin: 20px auto;
+}
+
+@media (min-width: 1024px) {
+  .aboutPage-headshot {
+    float: left;
+    width: 268px;
+    height: 378px;
+    margin: 0 20px 20px 0;
+  }
+
+  .aboutPage-hero .captionedImage {
+    float: right;
+    margin: 0 0 20px 20px;
+  }
+}
