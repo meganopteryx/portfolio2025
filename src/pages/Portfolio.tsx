@@ -6,28 +6,36 @@ import Tag from '../components/Tag';
 import Button from '../components/Button';
 import './Portfolio.css';
 
-// Wrapped in <Layout> by its route in App.tsx, matching Shop/About.
+// Wrapped in <Layout> by its route in App.tsx
 function PortfolioPage() {
   const projects = useMemo(() => getAllProjects(), []);
 
+  // This is to handle tags set in lowercase by accident
   const allTags = useMemo(() => {
-    const set = new Set<string>();
-    projects.forEach((p) => p.tags?.forEach((t) => set.add(t)));
-    return Array.from(set).sort();
+    const byKey = new Map<string, string>();
+    projects.forEach((p) =>
+      p.tags?.forEach((t) => {
+        const key = t.toLowerCase();
+        if (!byKey.has(key)) byKey.set(key, t);
+      })
+    );
+    return Array.from(byKey.values()).sort((a, b) => a.localeCompare(b));
   }, [projects]);
 
+  // Holds lowercase keys, not display strings.
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   const toggleTag = (tag: string) => {
+    const key = tag.toLowerCase();
     setSelectedTags((current) =>
-      current.includes(tag) ? current.filter((t) => t !== tag) : [...current, tag]
+      current.includes(key) ? current.filter((t) => t !== key) : [...current, key]
     );
   };
 
   const visibleProjects =
     selectedTags.length === 0
       ? projects
-      : projects.filter((p) => p.tags?.some((t) => selectedTags.includes(t)));
+      : projects.filter((p) => p.tags?.some((t) => selectedTags.includes(t.toLowerCase())));
 
   return (
     <div className="pageWidthLimiter portfolioPage">
@@ -37,7 +45,11 @@ function PortfolioPage() {
         <p className="portfolioPage-filterHint">Click the tags to filter</p>
         <div className="portfolioPage-tagRow">
           {allTags.map((tag) => (
-            <Tag key={tag} selected={selectedTags.includes(tag)} onClick={() => toggleTag(tag)}>
+            <Tag
+              key={tag}
+              selected={selectedTags.includes(tag.toLowerCase())}
+              onClick={() => toggleTag(tag)}
+            >
               {tag}
             </Tag>
           ))}
