@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: var(--space-xs);
   opacity: 0;
   visibility: hidden;
   transition: opacity 240ms ease, visibility 240ms ease;
@@ -62,8 +62,19 @@
 .modal-body {
   overflow-y: auto;
   max-height: 90vh;
-  padding: 24px;
+  padding: var(--space-md);
   box-sizing: border-box;
+}
+
+/* Tight padding on phones buys back ~32px of content width. */
+@media (min-width: 768px) {
+  .modal-overlay {
+    padding: var(--space-md);
+  }
+
+  .modal-body {
+    padding: var(--space-xl);
+  }
 }
 
 .custom-scrollbar::-webkit-scrollbar {

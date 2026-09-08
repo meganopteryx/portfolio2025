@@ -5,11 +5,10 @@ import etsyShop from '../assets/shop/etsy-shop.jpg';
 import teepublicShop from '../assets/home/shop-panel.png';
 import './Shop.css';
 
-// Wrapped in <Layout> by its route in App.tsx, matching CaseStudies/Portfolio
-// (not wrapped internally, unlike About.tsx).
+// Wrapped in <Layout> by its route in App.tsx
 function Shop() {
     return (
-        <div className="pageWidthLimiter shopPage">
+        <div className="shopPage">
             <PageHeader title="Shop" />
             <ShopCard
                 size="hero"

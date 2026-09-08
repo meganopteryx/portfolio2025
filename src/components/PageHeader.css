@@ -1,19 +1,28 @@
 .pageHeader {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--space-sm);
+}
+
+.pageHeader-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .pageHeader-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--space-sm);
+  min-width: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 .pageHeader-glyph {
   flex: none;
-  width: 79px;
-  height: 79px;
+  width: 48px;
+  height: 48px;
 }
 
 .pageHeader-glyph img {
@@ -24,14 +33,31 @@
 
 .pageHeader-logoText {
   margin: 0;
-  font-family: var(--title-page-family);
-  font-weight: var(--title-page-weight);
-  font-size: var(--title-page-size-rem);
-  line-height: var(--title-page-line-height-rem);
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-lg);
   color: var(--light-text);
-  white-space: nowrap;
 }
 
 .pageHeader h1 {
   margin: 0;
+}
+
+/* Wide enough for the wordmark and nav to share a row without crowding. */
+@media (min-width: 768px) {
+  .pageHeader-top {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+  }
+
+  .pageHeader-glyph {
+    width: 64px;
+    height: 64px;
+  }
+
+  .pageHeader-logoText {
+    font-size: var(--text-xl);
+  }
 }

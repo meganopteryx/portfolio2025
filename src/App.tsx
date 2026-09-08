@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
-import CaseStudies from './pages/case-studies/CaseStudies';
 import CaseStudyDetail from './pages/case-studies/CaseStudyDetail';
 import { HomePage } from './pages/Home';
 import AboutPage from './pages/About';
@@ -30,9 +29,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<Layout footer={<Footer />}><AboutPage /></Layout>} />
-        <Route path="/case-studies" element={<Layout><CaseStudies /></Layout>} />
-        <Route path="/case-studies/:slug" element={<Layout><CaseStudyDetail /></Layout>} />
-  <Route path="/portfolio" element={<Layout><Portfolio /></Layout>} />
+        <Route path="/case-studies/:slug" element={<Layout footer={<Footer />}><CaseStudyDetail /></Layout>} />
+  <Route path="/portfolio" element={<Layout footer={<Footer />}><Portfolio /></Layout>} />
         <Route path="/shop" element={<Layout footer={<Footer />}><Shop /></Layout>} />
         <Route path="/archive/*" element={<ArchiveRedirect />} />
       </Routes>

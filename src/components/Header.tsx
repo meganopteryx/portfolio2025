@@ -3,7 +3,7 @@ import './Header.css'
 
 function Header() {
     return (
-        <header className="siteHeader pageWidthLimiter">
+        <header className="siteHeader">
             <div className="siteHeader-logo">
                 <div className="siteHeader-glyph"><MeganopteryxLogo /></div>
                 <h1 className="siteHeader-title">Meganopteryx<br />Design</h1>

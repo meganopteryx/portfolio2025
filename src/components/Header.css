@@ -1,15 +1,14 @@
 .siteHeader {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  padding-top: 1.25rem;
-  margin-bottom: 2rem;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
 }
 
 .siteHeader-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--space-sm);
   transition: filter 300ms;
 }
 
@@ -31,34 +30,47 @@
 
 .siteHeader-title {
   margin: 0;
-  font-family: var(--title-mobile-family);
-  font-weight: var(--title-mobile-weight);
-  font-size: var(--title-mobile-size-rem);
-  line-height: var(--title-mobile-line-height-rem);
+  font-family: var(--font-family);
+  font-weight: var(--weight-extrabold);
+  font-size: var(--text-2xl);
+  line-height: var(--leading-none);
   color: var(--light-text);
 }
 
 .siteHeader-tagline {
   margin: 0;
-  font-family: var(--title-small-card-family, var(--title-mobile-family));
-  font-weight: var(--title-small-card-weight);
-  font-size: var(--title-small-card-size-rem);
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-xl);
   color: var(--light-text);
   text-align: center;
 }
 
+/* Intermediate step — full size here crowds the home cards below the fold on a
+   laptop-height viewport, so the header only grows partway. */
 @media (min-width: 1024px) {
+  .siteHeader-glyph {
+    width: 128px;
+    height: 128px;
+  }
+
+  .siteHeader-title {
+    font-size: var(--text-3xl);
+  }
+
+  .siteHeader-tagline {
+    text-align: left;
+  }
+}
+
+/* Full size only where there's vertical room for it. */
+@media (min-width: 1280px) {
   .siteHeader-glyph {
     width: 211px;
     height: 211px;
   }
 
   .siteHeader-title {
-    font-size: var(--title-hero-size-rem);
-    line-height: var(--title-hero-line-height-rem);
-  }
-
-  .siteHeader-tagline {
-    text-align: left;
+    font-size: var(--text-4xl);
   }
 }

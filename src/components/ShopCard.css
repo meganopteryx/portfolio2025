@@ -21,24 +21,24 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
 }
 
 .shopCard-title {
   margin: 0;
-  font-family: var(--title-medium-card-family);
-  font-weight: var(--title-medium-card-weight);
-  font-size: var(--title-medium-card-size-rem);
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-2xl);
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.38);
 }
 
 .shopCard-description {
   margin: 0;
-  font-family: var(--body-text-family);
-  font-weight: var(--body-text-weight);
-  font-size: var(--body-text-size-rem);
-  line-height: var(--body-text-line-height-rem);
+  font-family: var(--font-family);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-md);
+  line-height: var(--leading-body);
 }
 
 a.shopCard:hover {
@@ -54,11 +54,11 @@ a.shopCard:focus-visible {
 .shopCard-grid-row {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-lg);
   width: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .shopCard-grid-row {
     flex-direction: row;
   }

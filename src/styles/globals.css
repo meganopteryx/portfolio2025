@@ -1,71 +1,52 @@
 /* It's just variables. That's it. */
 
+/* BREAKPOINTS (min-width, mobile-first)
+   Not custom properties — CSS doesn't allow var() in media conditions, so these are
+   standardized by convention. Write them literally:
+      480px   large phone
+      768px   tablet
+     1024px   desktop
+     1280px   large desktop */
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
 
-  /* TYPE - Imported from Figma: 
-  TODO: consolidate these into things that are actually used*/
-  --title-mobile-family: "Nunito";
-  --title-mobile-size: 32px;
-  --title-mobile-size-rem: 2rem;
-  --title-mobile-weight: 800;
-  --title-mobile-style: normal;
-  --title-mobile-line-height: 32px;
-  --title-mobile-line-height-rem: 2rem;
+  /* TYPE */
+  --font-family: "Nunito";
 
-  --title-page-family: "Nunito";
-  --title-page-size: 48px;
-  --title-page-size-rem: 3rem;
-  --title-page-weight: 800;
-  --title-page-style: normal;
-  --title-page-line-height: 68px;
-  --title-page-line-height-rem: 4.25rem;
+  /* Size — mirrors the --space-* scale below */
+  --text-xs:   0.75rem;   /* 12px */
+  --text-sm:   0.875rem;  /* 14px */
+  --text-md:   1rem;      /* 16px */
+  --text-lg:   1.25rem;   /* 20px */
+  --text-xl:   1.5rem;    /* 24px */
+  --text-2xl:  2rem;      /* 32px */
+  --text-3xl:  3rem;      /* 48px */
+  --text-4xl:  4rem;      /* 64px */
 
-  --title-hero-family: "Nunito";
-  --title-hero-size: 64px;
-  --title-hero-size-rem: 4rem;
-  --title-hero-weight: 800;
-  --title-hero-style: normal;
-  --title-hero-line-height: 68px;
-  --title-hero-line-height-rem: 4.25rem;
+  /* Weight */
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-extrabold: 800;
 
-  --title-large-card-family: "Nunito";
-  --title-large-card-size: 48px;
-  --title-large-card-size-rem: 3rem;
-  --title-large-card-weight: 700;
-  --title-large-card-style: normal;
-  --title-large-card-line-height: 68px;
-  --title-large-card-line-height-rem: 4.25rem;
+  /* Line height — unitless so it scales with whatever size it's paired with */
+  --leading-none:  1;
+  --leading-tight: 1.25;
+  --leading-snug:  1.4;
+  --leading-body:  1.75;
 
-  --title-small-card-family: "Nunito";
-  --title-small-card-size: 24px;
-  --title-small-card-size-rem: 1.5rem;
-  --title-small-card-weight: 700;
-  --title-small-card-style: normal;
-  --title-small-card-line-height: 68px;
-  --title-small-card-line-height-rem: 4.25rem;
-
-  --body-text-family: "Nunito";
-  --body-text-size: 16px;
-  --body-text-size-rem: 1rem;
-  --body-text-weight: 400;
-  --body-text-style: normal;
-  --body-text-line-height: 28px;
-  --body-text-line-height-rem: 1.75rem;
-
-  --caption-text-family: "Nunito";
-  --caption-text-size: 12px;
-  --caption-text-size-rem: 0.75rem;
-  --caption-text-style: italic;
-
-  --title-medium-card-family: "Nunito";
-  --title-medium-card-size: 32px;
-  --title-medium-card-size-rem: 2rem;
-  --title-medium-card-weight: 700;
-  --title-medium-card-style: normal;
-  --title-medium-card-line-height: 68px;
-  --title-medium-card-line-height-rem: 4.25rem;
+  /* SPACING — 4px grid */
+  --space-2xs: 0.25rem;  /* 4px */
+  --space-xs:  0.5rem;   /* 8px */
+  --space-sm:  0.75rem;  /* 12px */
+  --space-md:  1rem;     /* 16px */
+  --space-lg:  1.25rem;  /* 20px */
+  --space-xl:  1.5rem;   /* 24px */
+  --space-2xl: 2rem;     /* 32px */
+  --space-3xl: 2.5rem;   /* 40px */
 
   /* BRAND COLORS*/
   --dark-bg: #0a0b0c;

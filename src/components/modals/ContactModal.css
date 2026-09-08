@@ -1,7 +1,7 @@
 .modal-title {
-  margin: 0 0 12px;
-  font-family: var(--title-medium-card-family);
-  font-weight: var(--title-medium-card-weight);
-  font-size: var(--title-medium-card-size-rem);
+  margin: 0 0 var(--space-sm);
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-2xl);
   color: var(--light-text);
 }

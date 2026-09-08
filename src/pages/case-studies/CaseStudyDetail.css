@@ -9,19 +9,19 @@
   max-height: 420px;
   object-fit: cover;
   border-radius: 12px;
-  margin-top: 1.2em;
+  margin-top: var(--space-md);
 }
 
 .caseBody {
-  margin-top: 1rem;
+  margin-top: var(--space-md);
   overflow-x: hidden;
   word-wrap: break-word;
 }
 
 .summary {
-  font-size: 1.125rem;
+  font-size: var(--text-lg);
   color: var(--blue-accent);
-  line-height: 1.6;
-  margin-top: 1rem;
+  line-height: var(--leading-body);
+  margin-top: var(--space-md);
   font-style: italic;
 }

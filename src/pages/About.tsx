@@ -7,7 +7,7 @@ import './About.css';
 
 function AboutPage() {
   return (
-    <div className="pageWidthLimiter aboutPage">
+    <div className="aboutPage">
       <PageHeader title="About Me" />
       <img className="aboutPage-headshot" src={headshot} alt="Megan Kossa" />
       <p>

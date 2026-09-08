@@ -38,7 +38,7 @@ function PortfolioPage() {
       : projects.filter((p) => p.tags?.some((t) => selectedTags.includes(t.toLowerCase())));
 
   return (
-    <div className="pageWidthLimiter portfolioPage">
+    <div className="portfolioPage">
       <PageHeader title="Portfolio" />
 
       <div className="portfolioPage-filters">

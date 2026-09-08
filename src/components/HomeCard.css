@@ -1,14 +1,19 @@
 .homeCardGrid {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-lg);
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .homeCardGrid {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px) {
   .homeCardGrid {
-    flex-direction: row;
-    gap: 40px;
+    gap: var(--space-3xl);
   }
 }
 
@@ -47,9 +52,10 @@
   position: absolute;
   left: 18px;
   bottom: 16px;
-  font-family: var(--title-small-card-family);
-  font-weight: var(--title-small-card-weight);
-  font-size: var(--title-small-card-size-rem);
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-xl);
+  line-height: var(--text-xl);/*override to preserve spacing*/
   color: var(--light-text);
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
@@ -69,15 +75,24 @@
   outline-offset: 2px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 480px) {
+  .homeCard-title {
+    font-size: var(--text-2xl);
+    line-height: var(--text-2xl);
+  }
+}
+
+@media (min-width: 768px) {
   .homeCard {
     height: 363px;
     flex: 1;
   }
+}
 
+/* Title waits for 1024 — at 768 the cards are only ~229px wide and 48px crowds them. */
+@media (min-width: 1024px) {
   .homeCard-title {
-    font-family: var(--title-large-card-family);
-    font-weight: var(--title-large-card-weight);
-    font-size: var(--title-large-card-size-rem);
+    font-size: var(--text-3xl);
+    line-height: var(--text-3xl); /*override to preserve spacing*/
   }
 }

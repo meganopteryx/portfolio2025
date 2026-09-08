@@ -1,9 +1,5 @@
-.aboutPage {
-  padding: 40px 1.2rem;
-}
-
 .aboutPage .pageHeader {
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-2xl);
 }
 
 .aboutPage-headshot {
@@ -13,23 +9,23 @@
   object-fit: cover;
   border: 2px solid var(--light-text);
   border-radius: 2px;
-  margin: 0 auto 20px;
+  margin: 0 auto var(--space-lg);
 }
 
 .aboutPage .captionedImage {
-  margin: 20px auto;
+  margin: var(--space-lg) auto;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .aboutPage-headshot {
     float: left;
     width: 268px;
     height: 378px;
-    margin: 0 20px 20px 0;
+    margin: 0 var(--space-lg) var(--space-lg) 0;
   }
 
   .aboutPage .captionedImage {
     float: right;
-    margin: 0 0 20px 20px;
+    margin: 0 0 var(--space-lg) var(--space-lg);
   }
 }

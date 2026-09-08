@@ -1,6 +1,6 @@
 .figure {
   width: 100%;
-  margin: 1rem 0;
+  margin: var(--space-md) 0;
 }
 
 /* Headings share a bottom-margin: 0 rule (see index.css), and floated figures
@@ -8,7 +8,7 @@
    right after a heading has effectively no breathing room above it. */
 h2 + .figure,
 h3 + .figure {
-  margin-top: 1.5rem;
+  margin-top: var(--space-xl);
 }
 
 .figure img {
@@ -19,10 +19,10 @@ h3 + .figure {
 }
 
 .figure-caption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  margin-top: var(--space-xs);
+  font-size: var(--text-sm);
   color: var(--blue-accent);
-  line-height: 1.4;
+  line-height: var(--leading-snug);
   font-style: italic;
 }
 
@@ -31,7 +31,7 @@ h3 + .figure {
   opacity: 0.75;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .figure.large {
     max-width: 400px;
   }
@@ -40,14 +40,14 @@ h3 + .figure {
     float: left;
     width: auto;
     max-width: 45%;
-    margin: 0 1.5rem 1.5rem 0;
+    margin: 0 var(--space-xl) var(--space-xl) 0;
   }
 
   .figure.right {
     float: right;
     width: auto;
     max-width: 45%;
-    margin: 0 0 1.5rem 1.5rem;
+    margin: 0 0 var(--space-xl) var(--space-xl);
   }
 
   .figure.left.large,

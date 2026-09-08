@@ -8,14 +8,12 @@ export default function Footer() {
   const { openModal } = useModal();
 
   return (
-    <div className="pageWidthLimiter">
-      <div className="siteFooter">
-        <p className="siteFooter-copyright">Content and site design © Megan Kossa 2026</p>
-        <Button variant="secondary" onClick={() => openModal(<ContactModal />)}>
-          Contact me
-        </Button>
-        <SocialIcons />
-      </div>
+    <div className="siteFooter">
+      <p className="siteFooter-copyright">Content and site design © Megan Kossa 2026</p>
+      <Button variant="secondary" className="siteFooter-button" onClick={() => openModal(<ContactModal />)}>
+        Contact me
+      </Button>
+      <SocialIcons />
     </div>
   );
 }

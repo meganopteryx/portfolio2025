@@ -1,47 +1,53 @@
 .portfolioPage {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 40px 1.2rem;
+  gap: var(--space-lg);
 }
 
 .portfolioPage-filterHint {
-  margin: 0 0 12px;
-  font-family: var(--title-small-card-family);
-  font-weight: var(--title-small-card-weight);
-  font-size: var(--title-small-card-size-rem);
+  margin: 0 0 var(--space-sm);
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-xl);
 }
 
 .portfolioPage-tagRow {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 12px;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
 }
 
 .portfolioPage-clearAll {
-  padding: 6px 14px;
-  font-size: 0.875rem;
-  line-height: 1;
+  padding: 6px 14px; /* Matches the Tag pill geometry above, not the spacing scale */
+  font-size: var(--text-sm);
+  line-height: var(--leading-none);
 }
 
 .portfolioPage-grid {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-lg);
 }
 
 .portfolioPage-note {
   font-style: italic;
 }
 
-@media (min-width: 1024px) {
+/* Two up once there's room; the flex-basis subtracts the gaps between columns. */
+@media (min-width: 480px) {
   .portfolioPage-grid {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .portfolioPage-grid .portfolioCard {
-    flex: 1 1 calc((100% - 40px) / 3);
+    flex: 1 1 calc((100% - var(--space-lg)) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolioPage-grid .portfolioCard {
+    flex: 1 1 calc((100% - var(--space-lg) * 2) / 3);
   }
 }

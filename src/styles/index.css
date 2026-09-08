@@ -7,9 +7,9 @@
   margin: 0;
   padding: 0;
 
-  font-family: var(--body-text-family);
-  line-height: var(--body-text-line-height);
-  font-weight: var(--body-text-weight);
+  font-family: var(--font-family);
+  line-height: var(--leading-body);
+  font-weight: var(--weight-regular);
 
   color-scheme: dark; /*TODO: create light theme*/
   color: var(--light-text);
@@ -24,18 +24,11 @@
 
 #root {width: 100%;}
 
-.pageWidthLimiter {
-  max-width: 1100px;
-  margin: 0 auto; /* Center the content */
-  padding: 0 1.2rem; /* Add some horizontal padding */
-  box-sizing: border-box; /* Include padding in width calculation */
-  width: 100%; /* Ensure it doesn't exceed viewport */
-}
 /* Default HTML elements */
 
 /* Links */
 a {
-  font-weight: 500;
+  font-weight: var(--weight-medium);
   color: var(--blue-accent);
   text-decoration: inherit;
 }
@@ -64,58 +57,73 @@ body {
 /* HEaders */
 
 h1, h2, h3, h4, h5 {
-  margin: 1.2rem 0 0 0.4rem;
+  margin: var(--space-lg) 0 0 var(--space-xs);
 }
 
 h1 {
-  font-family: var(--title-large-card-family);
-  font-weight: var(--title-large-card-weight);
-  font-size: var(--title-large-card-size-rem);
-  line-height: var(--title-large-card-line-height-rem);
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-2xl);
+  line-height: var(--leading-snug);
 }
 
 h2 {
-  font-size: 2rem;
-  line-height: 1.25;
+  font-size: var(--text-xl);
+  line-height: var(--leading-tight);
 }
 
 h3 {
-  font-size: 1.6rem;
-  line-height: 1.25;
+  font-size: var(--text-lg);
+  line-height: var(--leading-tight);
 }
 
 h4 {
-  font-size: 1.3rem;
-  line-height: 1.25;
+  font-size: var(--text-lg);
+  line-height: var(--leading-tight);
+}
+
+/* Headings step up once there's room for them. */
+@media (min-width: 768px) {
+  h1 {
+    font-size: var(--text-3xl);
+  }
+
+  h2 {
+    font-size: var(--text-2xl);
+  }
+
+  h3 {
+    font-size: var(--text-xl);
+  }
 }
 
 /* Para */
 
 p {
-  margin: 0.8rem 0;
-  line-height: 1.7;
+  margin: var(--space-sm) 0;
+  line-height: var(--leading-body);
 }
 
 /* Lists */
 
 ol {
   padding: 0;
-  margin: 0.8rem 0 0.8rem 1.2rem;
+  margin: var(--space-sm) 0 var(--space-sm) var(--space-lg);
 }
 
 ul {
   list-style: none;
   padding: 0;
-  margin: 0.8rem 0 0.8rem 1.2rem;
+  margin: var(--space-sm) 0 var(--space-sm) var(--space-lg);
 }
 
 li {
-  margin: 0.3rem 0;
+  margin: var(--space-2xs) 0;
 }
 
 ul li {
-  margin-bottom: 0.5rem;
-  padding-left: 1.3rem;
+  margin-bottom: var(--space-xs);
+  padding-left: var(--space-lg);
   position: relative;
 }
 
@@ -145,10 +153,10 @@ ul li a:hover {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 16px;
-  font-family: var(--body-text-family);
-  font-size: var(--body-text-size-rem);
-  font-weight: var(--body-text-weight);
+  padding: var(--space-md);
+  font-family: var(--font-family);
+  font-size: var(--text-md);
+  font-weight: var(--weight-regular);
   background-color: var(--brand-card-bg);
   cursor: pointer;
   transition: border-color 0.25s;
@@ -168,10 +176,10 @@ code {
      flagged for Megan, using brand-card-bg-hover as a reasonable stand-in */
   background: var(--brand-card-bg-hover);
   border-radius: 6px;
-  padding: 0.15rem 0.35rem;
+  padding: 0.15rem 0.35rem; /* Off-scale on purpose — typographic inset, not layout spacing */
   font-family:
         ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 0.95rem;
+  font-size: var(--text-sm);
 }
 
 /* TODO: check if this is actually used */
@@ -179,7 +187,7 @@ pre {
   background: var(--dark-bg);
   color: #c9d1d9; /* TODO: no close brand var for this muted code-text grey — flagged for Megan */
   border-radius: 10px;
-  padding: 1rem;
+  padding: var(--space-md);
   overflow-x: auto;
 }
 

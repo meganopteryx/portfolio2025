@@ -3,21 +3,21 @@
 }
 
 .lightbox-header {
-  margin-bottom: 20px;
+  margin-bottom: var(--space-lg);
 }
 
 .lightbox-title {
-  margin: 0 0 8px;
-  font-family: var(--title-medium-card-family);
-  font-weight: var(--title-medium-card-weight);
-  font-size: var(--title-medium-card-size-rem);
+  margin: 0 0 var(--space-xs);
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-xl);
 }
 
 .lightbox-description {
   margin: 0;
-  font-family: var(--body-text-family);
-  font-size: var(--body-text-size-rem);
-  line-height: var(--body-text-line-height-rem);
+  font-family: var(--font-family);
+  font-size: var(--text-md);
+  line-height: var(--leading-body);
 }
 
 .lightbox-viewer {
@@ -42,14 +42,14 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background: var(--brand-card-bg);
   border: 2px solid var(--light-text);
   color: var(--light-text);
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: var(--text-xl);
+  line-height: var(--leading-none);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -68,24 +68,44 @@
 }
 
 .lightbox-nav-prev {
-  left: 12px;
+  left: 8px;
 }
 
 .lightbox-nav-next {
-  right: 12px;
+  right: 8px;
+}
+
+/* Smaller buttons on phones so they don't swallow a narrow image. */
+@media (min-width: 768px) {
+  .lightbox-title {
+    font-size: var(--text-2xl);
+  }
+
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .lightbox-nav-prev {
+    left: 12px;
+  }
+
+  .lightbox-nav-next {
+    right: 12px;
+  }
 }
 
 .lightbox-caption {
-  margin: 12px 0 0;
-  font-family: var(--caption-text-family);
-  font-size: var(--caption-text-size-rem);
-  font-style: var(--caption-text-style);
+  margin: var(--space-sm) 0 0;
+  font-family: var(--font-family);
+  font-size: var(--text-xs);
+  font-style: italic;
   text-align: center;
 }
 
 .lightbox-counter {
-  margin: 4px 0 0;
-  font-size: var(--caption-text-size-rem);
+  margin: var(--space-2xs) 0 0;
+  font-size: var(--text-xs);
   text-align: center;
   color: var(--blue-accent);
 }
