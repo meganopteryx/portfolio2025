@@ -33,7 +33,7 @@
   width: 100%;
   max-height: 90vh;
   background: var(--brand-card-bg);
-  border: 1px solid rgba(37, 99, 235, 0.3);
+  border: 1px solid var(--blue-accent);
   backdrop-filter: blur(40px);
   border-radius: 12px;
   overflow: hidden;

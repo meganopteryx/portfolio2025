@@ -68,7 +68,7 @@ function PortfolioPage() {
       </div>
 
       <p className="portfolioPage-note">
-        Note: This portfolio is a work in progress. More projects and details will be added over time.
+        Note: More projects coming soon! Still working through my backlog.
       </p>
       <p>
         If you'd like to see some of my older work, please visit my archive site at{' '}

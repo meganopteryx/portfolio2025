@@ -8,7 +8,8 @@
   margin: 0 0 var(--space-sm);
   font-family: var(--font-family);
   font-weight: var(--weight-bold);
-  font-size: var(--text-xl);
+  font-size: var(--text-sm);
+  color: var(--blue-accent);
 }
 
 .portfolioPage-tagRow {
