@@ -13,12 +13,24 @@ interface ShopCardProps {
   size: 'hero' | 'grid';
   href?: string;
   cta?: ShopCardCta;
+  /* Painted behind the image, for transparent PNGs — same idea as HomeCard's bgColor. */
+  bgColor?: string;
+  /* 'contain' letterboxes instead of cropping — for logos/artwork that shouldn't lose edges. */
+  fit?: 'cover' | 'contain';
 }
 
-export default function ShopCard({ title, description, image, size, href, cta }: ShopCardProps) {
+export default function ShopCard({ title, description, image, size, href, cta, bgColor, fit }: ShopCardProps) {
   const body = (
     <>
-      <img src={image} alt="" className="shopCard-image" />
+      <img
+        src={image}
+        alt=""
+        className="shopCard-image"
+        style={{
+          ...(bgColor ? { backgroundColor: bgColor } : {}),
+          ...(fit ? { objectFit: fit } : {}),
+        }}
+      />
       <div className="shopCard-body">
         <p className="shopCard-title">{title}</p>
         <p className="shopCard-description">{description}</p>

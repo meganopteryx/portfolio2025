@@ -30,6 +30,7 @@ function Shop() {
                     title="Teepublic Shop"
                     description="Print-to-order T-shirts, mugs, hats, stickers, and more! Put my fun animal drawings on your stuff! If you'd like to see something on here I sometimes take requests! Shoot me an email or a Discord message and I'll see what I can do."
                     image={teepublicShop}
+                    bgColor="var(--teal-grey)"
                     href="https://www.teepublic.com/user/meganopteryx"
                 />
             </div>

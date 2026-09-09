@@ -17,6 +17,24 @@
   object-fit: cover;
 }
 
+/* The hero card spans the full width, so a 220px crop turns into a ~4.8:1 letterbox
+   that throws away most of the photo. Give it more height as the card widens. */
+.shopCard-hero .shopCard-image {
+  object-position: 50% 20%;
+}
+
+@media (min-width: 768px) {
+  .shopCard-hero .shopCard-image {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .shopCard-hero .shopCard-image {
+    height: 340px;
+  }
+}
+
 .shopCard-body {
   display: flex;
   flex-direction: column;
