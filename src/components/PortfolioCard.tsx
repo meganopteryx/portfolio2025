@@ -4,7 +4,7 @@ import Tag from './Tag';
 import GalleryIcon from './icons/GalleryIcon';
 import WriteupIcon from './icons/WriteupIcon';
 import ExternalLinkIcon from './icons/ExternalLinkIcon';
-import useModal from '../hooks/useModal';
+import useModal from './modal/useModal';
 import Lightbox from './Lightbox';
 import './PortfolioCard.css';
 

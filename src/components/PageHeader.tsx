@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MeganopteryxLogo } from './MeganopteryxLogo';
+import { MeganopteryxLogo } from './icons/MeganopteryxLogo';
 import SectionNav from './SectionNav';
 import './PageHeader.css';
 

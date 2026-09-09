@@ -1,4 +1,4 @@
-import { MeganopteryxLogo } from './MeganopteryxLogo'
+import { MeganopteryxLogo } from './icons/MeganopteryxLogo'
 import './Header.css'
 
 function Header() {

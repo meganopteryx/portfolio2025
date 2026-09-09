@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { useModalContext } from './modal-context-hook';
+import { useModalContext } from './useModalContext';
 
 //Controls for opening and closing modals and confirm dialogs
 

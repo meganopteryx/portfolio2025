@@ -1,7 +1,7 @@
 import Button from './Button';
 import SocialIcons from './SocialIcons';
-import useModal from '../hooks/useModal';
-import ContactModal from './modals/ContactModal';
+import useModal from './modal/useModal';
+import ContactModal from './modal/dialogs/ContactModal';
 import './Footer.css';
 
 export default function Footer() {
