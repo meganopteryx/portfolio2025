@@ -1,6 +1,5 @@
-/*Mobile-first design and layout*/
-
-/*Is this the actual real CSS????? This should only be page setup stuff not component related stuff */
+/* Mobile-first base styles: reset, defaults, and bare element styling.
+   Component styles live next to their components; design tokens live in globals.css. */
 
 :root {
   /* Set defaults */
@@ -49,12 +48,7 @@ body {
   overflow-x: hidden;
 }
 
-/*TODO: relocate this class*/
-.main {
-  padding: 10px 0;
-}
-
-/* HEaders */
+/* Headers */
 
 h1, h2, h3, h4, h5 {
   margin: var(--space-lg) 0 0 var(--space-xs);
@@ -182,159 +176,12 @@ code {
   font-size: var(--text-sm);
 }
 
-/* TODO: check if this is actually used */
+/* Reachable but not yet exercised: MDXMappings maps `pre`/`code` to pass-through
+   components, so these style MDX code blocks. No case study uses one yet. */
 pre {
   background: var(--dark-bg);
   color: #c9d1d9; /* TODO: no close brand var for this muted code-text grey — flagged for Megan */
   border-radius: 10px;
   padding: var(--space-md);
   overflow-x: auto;
-}
-
-/* Utility */
-
-.hidden {
-  display: none;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.clearfix {
-  clear: both;
-}
-
-/* Component styles: 
-TODO: put into component CSS modules*/
-
-.logo {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center the logo horizontally */
-  will-change: filter;
-  transition: filter 300ms;
-  flex-direction: row;
-}
-
-.logo:hover {
-  filter: drop-shadow(var(--glow-blue-accent));
-}
-
-.logoGlyph {
-  flex: none;
-  padding-right: .5em;
-  width: 4em; 
-  height: 4em; 
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.logoText {
-  flex: auto;
-  font-size: 2rem;
-}
-
-
-/* Slogan Styles */
-.slogan {
-  font-size: 1.2em;
-  color: var(--blue-accent);
-  font-style: italic;
-  margin: 1em;
-  text-align: center; /* Center-align the slogan */
-  /*TODO: make a fancy animation on hover or select*/
-}
-
-/* Card Container */
-.cardContainer {
-  display: grid;
-  grid-template-columns: 1fr; /* Single column by default */
-  gap: 1.2em;
-}
-
-.card {
-  padding: 1rem 1.5rem;
-  background-color: var(--brand-card-bg);
-  border-radius: 1rem;
-  border: 1px solid #3975aa; /* TODO: no close brand var for this border blue — flagged for Megan */
-  box-shadow:inset 0 0 0 0 transparent;
-  transition: background-color 0.7s ease;
-  color: var(--light-text);
-}
-
-.card:hover {
-  background-color: var(--brand-card-bg-hover);
-  box-shadow:inset 0 0 1rem 0 rgba(255, 255, 255, 0.2);
-}
-
-.card h2 {
-  padding: 0;
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-
-/* Case studies: imported from main.tsx to satisfy PostCSS ordering */
-
-/* Responsive Styles */
-@media (min-width: 480px) {
-  .cardContainer {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for small tablets and above */
-  }
-}
-
-@media (min-width: 768px) {
-  .cardContainer {
-    grid-template-columns: repeat(3, 1fr); /* Two columns for tablets */
-  }
-
-  .slogan {
-    font-size: 1.5em; /* Larger font size for tablets */
-    filter: drop-shadow(var(--glow-blue-accent));
-  }
-}
-
-@media (min-width: 1024px) {
-  .cardContainer {
-    grid-template-columns: repeat(3, 1fr); /* Three columns for desktops */
-  }
-
-  .slogan {
-    font-size: 1.8em; /* Even larger font size for desktops */
-  }
-}
-
-@media (min-width: 768px) {
-  .logo {
-    flex-direction: row;
-    width: auto;
-  }
-  .logoGlyph {
-    padding-right: 1em;
-    width: 6em; 
-    height: 6em; 
-  }
-  
-  .logoText {
-    font-size: 3rem; /* Larger font size for tablets and above */
-  }
-
-  .md-visible{
-    display:block
-  }
-}
-
-@media (min-width: 1024px) {
-  .logoText {
-    font-size: 4rem; /* Even larger font size for desktops */
-  }
-
-  .logoGlyph {
-    width: 8em; 
-    height: 8em; 
-  }
 }
