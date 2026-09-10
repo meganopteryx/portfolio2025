@@ -1,4 +1,4 @@
-import type { Project } from '../content/portfolio/projectlist';
+import type { Project, ProjectDisplayType } from '../content/portfolio/projectlist';
 
 interface CaseStudyFrontmatter {
   title?: string;
@@ -13,6 +13,7 @@ interface CaseStudyFrontmatter {
   tools?: string[];
   gallery?: { source: string; caption?: string }[];
   links?: { live?: string; source?: string };
+  displayType?: ProjectDisplayType;
 }
 
 interface MDXModule {
@@ -44,6 +45,7 @@ export function mdxCaseStudiesToProjects(): Project[] {
       id: Math.abs(hashCode(fm.slug)),
       slug: fm.slug,
       title: fm.title,
+      displayType: fm.displayType ?? 'case-study',
       shortDescription: fm.summary ?? undefined,
       description: fm.summary ?? undefined,
       image: fm.coverImage ?? undefined,

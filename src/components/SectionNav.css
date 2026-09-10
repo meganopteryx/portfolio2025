@@ -1,0 +1,22 @@
+.sectionNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-md);
+}
+
+.sectionNav-link {
+  color: var(--blue-accent);
+  text-decoration: none;
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-md);
+}
+
+.sectionNav-link:hover {
+  filter: brightness(1.15) drop-shadow(var(--glow-blue-accent));
+}
+
+.sectionNav-link-active {
+  color: var(--light-text);
+  font-weight: var(--weight-bold);
+}

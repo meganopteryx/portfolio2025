@@ -1,0 +1,87 @@
+.shopCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: var(--brand-card-bg);
+  border: 2px solid var(--light-text);
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--light-text);
+}
+
+.shopCard-image {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* The hero card spans the full width, so a 220px crop turns into a ~4.8:1 letterbox
+   that throws away most of the photo. Give it more height as the card widens. */
+.shopCard-hero .shopCard-image {
+  object-position: 50% 20%;
+}
+
+@media (min-width: 768px) {
+  .shopCard-hero .shopCard-image {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .shopCard-hero .shopCard-image {
+    height: 340px;
+  }
+}
+
+.shopCard-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+}
+
+.shopCard-title {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-2xl);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.38);
+}
+
+.shopCard-description {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-md);
+  line-height: var(--leading-body);
+}
+
+a.shopCard:hover {
+  border-color: var(--blue-accent);
+  filter: brightness(1.15) drop-shadow(var(--glow-blue-accent));
+}
+
+a.shopCard:focus-visible {
+  outline: 2px solid var(--blue-accent);
+  outline-offset: 2px;
+}
+
+.shopCard-grid-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .shopCard-grid-row {
+    flex-direction: row;
+  }
+
+  .shopCard-grid-row .shopCard {
+    flex: 1;
+  }
+}

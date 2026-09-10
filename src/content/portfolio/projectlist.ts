@@ -1,7 +1,10 @@
+export type ProjectDisplayType = 'gallery' | 'case-study' | 'external';
+
 export type Project = {
   id: number;
   slug?: string;
   title: string;
+  displayType: ProjectDisplayType;
   description?: string;
   shortDescription?: string;
   fullDescription?: string;
@@ -22,6 +25,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: 'Amethyst Scarab Necklace',
+    displayType: 'gallery',
     description: 'Egyptian-themed costume jewelry piece',
     shortDescription:
       'A piece of commissioned costume jewelry including a real scarab, themed around the mythical scarab of ancient Egyptian fame.',
@@ -59,10 +63,11 @@ export const projects: Project[] = [
   {
     id: 2,
     title: 'Shake 42',
+    displayType: 'gallery',
     description: 'Online hub for playing Texas 42 dominoes',
     shortDescription: 'A web application to facilitate playing Texas 42 dominoes online with friends, featuring a game lobby, matchmaking, and scoring.',
     fullDescription:
-      'Shake 42 is a web application designed to facilitate playing Texas 42 dominoes online with friends. It features game management, scoring, and a user-friendly interface to enhance the gaming experience.<br>My role focused on UX design, creating wireframes and mockups to ensure an intuitive user experience. I collaborated with developers to implement the designs and iterated based on user feedback. Unfortunately, the project was shelved due to funding issues, but it provided valuable experience in web app design and user interaction. Full case study coming soon!',
+      'Shake 42 is a web application designed to facilitate playing Texas 42 dominoes online with friends. It features game management, scoring, and a user-friendly interface to enhance the gaming experience. My role focused on UX design, creating wireframes and mockups to ensure an intuitive user experience. I collaborated with developers to implement the designs and iterated based on user feedback. Unfortunately, the project was shelved due to funding issues, but it provided valuable experience in web app design and user interaction.',
     image: '/portfolio/shake-42/cover.webp',
     tags: ['Web App', 'Game', 'Figma'],
     category: 'web app',

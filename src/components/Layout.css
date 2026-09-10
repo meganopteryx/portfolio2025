@@ -1,0 +1,18 @@
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.layout-main,
+.layout-footer {
+  max-width: 1100px;
+  margin: 0 auto; /* Center the content */
+  padding: var(--space-lg);
+  box-sizing: border-box; /* Include padding in width calculation */
+  width: 100%; /* Ensure it doesn't exceed viewport */
+}
+
+.layout-footer {
+  padding: 0 var(--space-lg) var(--space-lg);
+}

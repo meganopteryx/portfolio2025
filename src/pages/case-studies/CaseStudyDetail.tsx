@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { mdxComponents } from '../../components/mdx/MDXMappings';
+import PageHeader from '../../components/PageHeader';
+import './CaseStudyDetail.css';
 import type { ComponentType, ReactElement } from 'react';
 
 interface CaseStudyFrontmatter {
@@ -28,7 +30,9 @@ export default function CaseStudyDetail() {
   const entry = values.find((m) => ((m.frontmatter?.slug ?? m.frontMatter?.slug) === slug))
     ?? Object.entries(modules).find(([p]) => p.endsWith(`${slug}.mdx`))?.[1];
 
-  if (!entry) return <div className="pageWidthLimiter"><h1>Not found</h1></div>;
+  if (!entry) {
+    return <PageHeader title="Not Found" />;
+  }
 
   const { default: MDXContent } = entry;
   const frontmatter = entry.frontmatter ?? entry.frontMatter;
@@ -36,16 +40,16 @@ export default function CaseStudyDetail() {
   const Content = MDXContent as unknown as MDXContentType;
 
   return (
-    <div className="pageWidthLimiter">
+    <>
+      <PageHeader title={frontmatter?.title ?? 'Case Study'} />
       <header className="caseHero">
         {frontmatter?.coverImage && <img src={frontmatter.coverImage} alt={frontmatter.title} />}
-        <h1>{frontmatter?.title}</h1>
         {frontmatter?.summary && <p className="summary">{frontmatter.summary}</p>}
       </header>
       <article className="caseBody">
         <Content components={mdxComponents} />
       </article>
-    </div>
+    </>
   );
 }
 

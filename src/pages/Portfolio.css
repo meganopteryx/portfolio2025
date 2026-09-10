@@ -1,0 +1,54 @@
+.portfolioPage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.portfolioPage-filterHint {
+  margin: 0 0 var(--space-sm);
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-sm);
+  color: var(--blue-accent);
+}
+
+.portfolioPage-tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.portfolioPage-clearAll {
+  padding: 6px 14px; /* Matches the Tag pill geometry above, not the spacing scale */
+  font-size: var(--text-sm);
+  line-height: var(--leading-none);
+}
+
+.portfolioPage-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.portfolioPage-note {
+  font-style: italic;
+}
+
+/* Two up once there's room; the flex-basis subtracts the gaps between columns. */
+@media (min-width: 480px) {
+  .portfolioPage-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .portfolioPage-grid .portfolioCard {
+    flex: 1 1 calc((100% - var(--space-lg)) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolioPage-grid .portfolioCard {
+    flex: 1 1 calc((100% - var(--space-lg) * 2) / 3);
+  }
+}

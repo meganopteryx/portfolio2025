@@ -1,0 +1,5 @@
+.shopPage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}

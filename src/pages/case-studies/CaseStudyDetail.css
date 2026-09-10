@@ -1,0 +1,27 @@
+.caseHero {
+  overflow-x: hidden;
+}
+
+.caseHero img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: var(--space-md);
+}
+
+.caseBody {
+  margin-top: var(--space-md);
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.summary {
+  font-size: var(--text-lg);
+  color: var(--blue-accent);
+  line-height: var(--leading-body);
+  margin-top: var(--space-md);
+  font-style: italic;
+}
